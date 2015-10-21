@@ -1,0 +1,52 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+@font-face {
+  font-family: Existence;
+  src: url(../fonts/existence/existence-light-webfont.ttf); }
+body {
+  font-family: 'Lato', sans-serif; }
+
+.grid-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
+
+.col-12 {
+  width: 100%; }
+
+header {
+  background-image: url(../images/Bhagaskara_01.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.companyname {
+  font-family: Existence;
+  font-size: 64px;
+  color: white;
+  line-height: 0.3;
+  text-align: center;
+  padding-top: 100px; }
+  .companyname span {
+    color: #9f449b; }
+
+h3 {
+  font-size: 30px;
+  font-weight: lighter;
+  color: white;
+  line-height: 0.5;
+  text-align: center;
+  margin-top: 70px; }
+
+h4 {
+  color: white;
+  font-weight: lighter;
+  line-height: 1;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px; }
+
+/*# sourceMappingURL=style.css.map */
