@@ -32,7 +32,7 @@ header {
   color: #fff;
   line-height: 0.3;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 10%; }
   .companyname span {
     color: #9f449b; }
@@ -110,14 +110,15 @@ h3 {
   background-image: url(../images/purple.png); }
 
 .navbar {
-  padding-bottom: 2%;
-  background: white; }
+  padding-bottom: 20px;
+  background: white;
+  vertical-align: middle; }
 
 .companyname2 {
   font-family: Existence;
   font-size: 2em;
   color: #676767;
-  line-height: 0.3;
+  line-height: 0.4;
   margin-left: 10px;
   text-align: left;
   list-style: none;
@@ -125,6 +126,12 @@ h3 {
   float: left; }
   .companyname2 span {
     color: #9f449b; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px; }
 
 .menu {
   list-style: none;
@@ -134,13 +141,14 @@ h3 {
     display: inline-block;
     margin-left: 20px; }
 
-a:link {
+a {
   color: #676767;
   text-decoration: none; }
-a:hover {
+  a:hover {
+    color: #9f449b; }
+
+.active {
   color: #9f449b; }
-a:visited {
-  text-decoration: none; }
 
 .sectionlove {
   background-color: #eee; }
@@ -165,10 +173,6 @@ a:visited {
 
 .aboutus {
   padding-bottom: 10%; }
-  .aboutus .corners {
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 8%; }
   .aboutus .screens {
     display: inline-block;
     float: left; }
@@ -182,6 +186,11 @@ a:visited {
     padding-top: 20%;
     text-align: left;
     display: inline-block; }
+
+.corners {
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 8%; }
 
 .interlude {
   background-image: url(../images/quotebg.png);
@@ -198,20 +207,51 @@ a:visited {
     font-size: 2.5em;
     padding-bottom: 10%; }
 
-.ourteam .ourteamimg {
-  text-align: center;
-  padding-top: 10%;
-  padding-bottom: 4%; }
-.ourteam .imgarr1 {
-  background: url(../images/left.png); }
-.ourteam #left {
-  float: right; }
-  .ourteam #left:hover {
-    display: none; }
-.ourteam #right {
-  float: left; }
+#ourteam {
+  padding-bottom: 60px; }
+  #ourteam .ourteamimg {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 4%; }
+  #ourteam .imgarr1 {
+    background: url(../images/left.png); }
+  #ourteam .imgarr2 {
+    background: url(../images/right.png); }
+  #ourteam #left {
+    float: right; }
+    #ourteam #left:hover {
+      display: none; }
+  #ourteam #right {
+    float: left; }
+    #ourteam #right:hover {
+      display: none; }
 
-.displaynone {
-  display: none; }
+#info-section {
+  background: #eee; }
+
+.info {
+  padding-top: 2%;
+  padding-bottom: 10%; }
+
+.number {
+  float: left;
+  font-size: 4em;
+  color: #222222; }
+
+.lorem {
+  clear: both;
+  float: left;
+  color: #222222; }
+
+.select {
+  line-height: 2em;
+  border: 1px solid black;
+  border-radius: 10%;
+  margin: 2px;
+  margin-bottom: 20%; }
+
+.portfolioexample {
+  padding: 5px;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

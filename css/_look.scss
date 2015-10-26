@@ -43,7 +43,7 @@ header {
   color: map_get($Colors,white);
   line-height: 0.3;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 10%;
   span {
     color: map_get($Colors,purple);
@@ -137,15 +137,16 @@ h3 {
 }
 
 .navbar {
-  padding-bottom: 2%;
+  padding-bottom: 20px;
   background: white;
+  vertical-align: middle;
 }
 
 .companyname2 {
   font-family: Existence;
   font-size: 2em;
   color: map_get($Colors,mainFontColor);
-  line-height: 0.3;
+  line-height: 0.4;
   margin-left: 10px;
   text-align: left;
   list-style: none;
@@ -156,10 +157,19 @@ h3 {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width:100%;
+  padding: 20px;
+}
+
+
 .menu {
     list-style: none;
     text-align: right;
-    color: map_get($Colors,mainFontColor);
+    color: map_get($Colors, mainFontColor);
+
   li{
     display: inline-block;
     margin-left: 20px;
@@ -167,16 +177,15 @@ h3 {
 }
 
 a {
-  &:link {
     color: map_get($Colors, mainFontColor);
     text-decoration: none;
-  }
   &:hover {
     color: map_get($Colors,purple);
   }
-  &:visited {
-    text-decoration: none;
-  }
+}
+
+.active {
+  color: map_get($Colors,purple);
 }
 
 .sectionlove {
@@ -208,14 +217,7 @@ a {
 
 .aboutus {
   padding-bottom: 10%;
-  .corners{
-    text-align: center;
-    padding-top: 10%;
-    padding-bottom: 8%;
-
-  }
   .screens {
-
     display: inline-block;
     float: left;
 
@@ -232,6 +234,12 @@ a {
     text-align: left;
     display: inline-block;
   }
+}
+
+.corners{
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 8%;
 }
 
 .interlude{
@@ -252,15 +260,19 @@ a {
     padding-bottom: 10%;
   }
 }
+#ourteam {
+  padding-bottom: 60px;
 
-.ourteam {
   .ourteamimg {
     text-align: center;
     padding-top: 10%;
     padding-bottom: 4%;
   }
   .imgarr1{
-    background: url(../images/left.png);
+     background: url(../images/left.png);
+   }
+  .imgarr2{
+    background: url(../images/right.png);
   }
 
   #left {
@@ -271,9 +283,43 @@ a {
   }
   #right {
     float: left;
+    &:hover {
+      display: none;
+    }
   }
 }
 
-.displaynone {
-  display: none;
+
+#info-section {
+  background: map_get($Colors, lightGreyBackground);
+}
+
+.info {
+  padding-top: 2%;
+  padding-bottom: 10%;
+}
+.number{
+  float: left;
+  font-size: 4em;
+  color: map_get($Colors, darkGrey);
+}
+
+.lorem{
+  clear:both;
+  float: left;
+  color: map_get($Colors, darkGrey);
+}
+
+
+.select {
+  line-height: 2em;
+  border: 1px solid black;
+  border-radius: 10%;
+  margin: 2px;
+  margin-bottom: 20%;
+}
+
+.portfolioexample {
+  padding: 5px;
+  text-align: center;
 }
