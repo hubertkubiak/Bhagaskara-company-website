@@ -34,24 +34,25 @@ header {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
 .companyname {
   font-family: Existence;
-  font-size: 3.5em;
+  font-size: 4em;
   color: map_get($Colors,white);
   line-height: 0.3;
   text-align: center;
   padding-top: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 8%;
   span {
     color: map_get($Colors,purple);
   }
 }
 
 h3 {
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: lighter;
   color: map_get($Colors,white);
   line-height: 0.5;
@@ -62,11 +63,11 @@ h3 {
 .vestibulum {
   color: map_get($Colors,white);
   font-weight: lighter;
-  line-height: 1.3;
+  line-height: 1;
   text-align: center;
   font-size: 1em;
-  margin-top: 3%;
-  margin-bottom: 10%;
+  margin-top: 1%;
+  margin-bottom: 5%;
 }
 
 
@@ -138,7 +139,7 @@ h3 {
 
 .navbar {
   padding-bottom: 20px;
-  background: white;
+  background: white !important;
   vertical-align: middle;
 }
 
@@ -200,6 +201,8 @@ a {
   width: 25%;
   .lovepic {
     padding-bottom: 10%;
+    width: 100%;
+    height: auto;
   }
   h4 {
     font-weight: lighter;
@@ -211,7 +214,7 @@ a {
     font-weight: lighter;
     font-size: 1em;
     color: map_get($Colors, mainFontColor);
-    padding-bottom: 70%;
+    padding-bottom: 60%;
   }
 }
 
@@ -246,6 +249,8 @@ a {
   background-image: url(../images/quotebg.png);
   width: 100%;
   background-size: cover;
+  background-color: map_get($Colors, lightGreyBackground);
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -265,7 +270,7 @@ a {
 
   .ourteamimg {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 6%;
     padding-bottom: 4%;
   }
   .imgarr1{
@@ -288,7 +293,6 @@ a {
     }
   }
 }
-
 
 #info-section {
   background: map_get($Colors, lightGreyBackground);
@@ -316,10 +320,135 @@ a {
   border: 1px solid black;
   border-radius: 10%;
   margin: 2px;
-  margin-bottom: 20%;
+  margin-bottom: 5%;
 }
 
+.portfolioimages {
+  padding-bottom: 4%;
+}
 .portfolioexample {
-  padding: 5px;
+  width: calc(33% - 10px);
+  margin: 5px;
+  height: 420px;
+  &:hover {
+    opacity: 0.4;
+  }
+  span {
+    position:relative;
+    top: 86%;
+    z-index: -2;
+  }
+}
+
+.undertext1 {
+  font-size: 1.5em;
+}
+
+.undertext2 {
+  color: map_get($Colors, midGreyGallerytext);
+}
+
+.example1 {
+  background-image: url(../images/t1.jpg);
+  background-repeat: no-repeat;
+}
+
+.example2 {
+  background-image: url(../images/t2.jpg);
+  background-repeat: no-repeat;
+}
+
+.example3 {
+  background-image: url(../images/t3.jpg);
+  background-repeat: no-repeat;
+}
+
+.example4 {
+  background-image: url(../images/t4.jpg);
+  background-repeat: no-repeat;
+}
+
+.example5 {
+  background-image: url(../images/t5.jpg);
+  background-repeat: no-repeat;
+}
+
+.example6 {
+  background-image: url(../images/t6.jpg);
+  background-repeat: no-repeat;
+}
+
+.watch {
   text-align: center;
+  img {
+    height: 60px;
+  }
+  padding-bottom: 5%;
+}
+
+
+.form {
+  text-align: left;
+}
+
+.name {
+  width: 98%;
+  border: 1px solid map_get($Colors, black);
+  height: 60px;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.email {
+  width: 98%;
+  height: 60px;;
+  color: map_get($Colors, black);
+  border: 1px solid map_get($Colors, black);
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.textarea {
+  width: 98%;
+  height: 250px;
+  font-size: 1.5em;
+  border: 1px solid map_get($Colors, black);
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+#submit {
+  padding-top: 5px;
+  font-size: 30px;
+  color: white;
+  background: map_get($Colors, purple);
+  border-radius: 7px;
+}
+
+.contactdata {
+  vertical-align: top;
+  text-align: left;
+  font-size: 1.2em;
+  p {
+    padding-bottom: 8%;
+  }
+  .contacttext {
+    display: inline-block;
+    color: map_get($Colors, mainFontColor)
+  }
+  .adress{
+    font-weight: bold;
+    color: map_get($Colors, darkGrey)
+  }
+  .telephone {
+    font-weight: bold;
+    color: map_get($Colors, darkGrey)
+  }
+}
+
+
+.totopbottom {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }

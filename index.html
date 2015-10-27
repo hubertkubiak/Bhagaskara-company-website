@@ -15,7 +15,7 @@
 
         <header>
 
-            <div class="grid-container">
+            <div class="grid-container" id="top">
 
             <h1 class="companyname">Bhagas<span>kara</span>.</h1>
             <h3>Fusce rutrum pretium lorem semper nulla.</h3>
@@ -25,16 +25,16 @@
 
             <div class="navigation grid-container">
                 <div class="col-4 down"></div>
-                <div class="services col-2 down"><a class="pinkbackground" href="index.html"><img class="picture" src="images/services.png"/></a></div>
-                <div class="portfolio col-2 down"><a class="pinkbackground" href="index.html"><img class="picture" src="images/portfolio.png"/></a></div>
-                <div class=" col-4 down"></div>
+                <div class="services col-2 down"><a class="pinkbackground" href="#ourservices"><img class="picture" src="images/services.png"/></a></div>
+                <div class="portfolio col-2 down"><a class="pinkbackground" href="#ourportfolio"><img class="picture" src="images/portfolio.png"/></a></div>
+                <div class="col-4 down"></div>
             </div>
             <div class="navigation grid-container">
-                <div class="about col-2 up"><a class="pinkbackground" href="index.html"><img class="picture" src="images/about.png"/></a></div>
-                <div class="team col-2 up"><a class="pinkbackground" href="index.html"><img class="picture" src="images/team.png"/></a></div>
+                <div class="about col-2 up"><a class="pinkbackground" href="#aboutussection"><img class="picture" src="images/about.png"/></a></div>
+                <div class="team col-2 up"><a class="pinkbackground" href="#ourteam"><img class="picture" src="images/team.png"/></a></div>
                 <div class="services col-4 down"></div>
-                <div class="blog col-2 up"><a class="pinkbackground" href="index.html"><img class="picture" src="images/blog.png"/></a></div>
-                <div class="contact col-2 up"><a class="pinkbackground" href="index.html"><img class="picture" src="images/contact.png"/></a></div>
+                <div class="blog col-2 up"><a class="pinkbackground"><img class="picture" src="images/blog.png"/></a></div>
+                <div class="contact col-2 up"><a class="pinkbackground" href="#contact"><img class="picture" src="images/contact.png"/></a></div>
             </div>
 
             <div class="scroll grid-container">
@@ -48,12 +48,12 @@
             <div class="grid-container">
                 <div class="companyname2">Bhagas<span>kara</span>.</div>
                 <ul class = menu>
-                    <li class="menu1"><a href="index.html">HOME</a></li>
+                    <li class="menu1"><a href="#top">HOME</a></li>
                     <li class="menu1"><a href="#aboutussection">ABOUT</a></li>
                     <li class="menu1"><a href="#ourteam">TEAM</a></li>
                     <li class="menu1"><a href="#ourservices">SERVICE</a></li>
                     <li class="menu1"><a href="#ourportfolio">PORTFOLIO</a></li>
-                    <li class="menu1"><a href="#" id="notblog">BLOG</a></li>
+                    <li class="menu1"><a id="notblog">BLOG</a></li>
                     <li class="menu1"><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
@@ -142,8 +142,8 @@
 
         </div>
 
-        <div id="ourportfolio" class="sec">
-            <div class="portfolio grid-container">
+        <div id="ourportfolio" class="sec grid-container">
+            <div class="portfolio">
                 <div class="corners"><img src="images/ourportfolio.png"/></div>
                 <div class="empty col-4"></div>
                 <div class="select col-1">ALL</div>
@@ -152,41 +152,60 @@
                 <div class="select col-1">ICON</div>
                 <div class="empty col-4"></div>
             </div>
-            <div class="portfolioimages grid-container">
-                <div class="col-4 portfolioexample">
-                        <div><img src="images/t1.jpg"/></div><br>
-                        <span class="undertext undertext1">Neque Porro Quisquam</span><br>
-                        <span class ="undertext undertext2">apps, icons, ui</span>
+            <div class="portfolioimages ">
+                <div class="col-4 portfolioexample example1">
+                        <span class ="undertext1">Neque Porro Quisquam</span><br>
+                        <span class ="undertext2">apps, icons, ui</span>
                 </div>
-                <div class="col-4 portfolioexample">
-                        <div><img src="images/t2.jpg"/></div><br>
-                        <span class="undertext undertext1">Neque Porro Quisquam</span><br>
-                        <span class ="undertext undertext2">apps, icons, ui</span>
+                <div class="col-4 portfolioexample example2">
+                        <span class ="undertext1">Neque Porro Quisquam</span><br>
+                        <span class ="undertext2">apps, icons, ui</span>
                 </div>
-                <div class="col-4 portfolioexample">
-                        <div><img src="images/t3.jpg"/></div><br>
-                        <span class="undertext undertext1">Neque Porro Quisquam</span><br>
-                        <span class ="undertext undertext2">apps, icons, ui</span>
+                <div class="col-4 portfolioexample example3">
+                        <span class= "undertext1">Neque Porro Quisquam</span><br>
+                        <span class ="undertext2">apps, icons, ui</span>
                 </div>
-                <div class="col-4 portfolioexample">
-                        <div><img src="images/t4.jpg"/></div><br>
-                        <span class="undertext undertext1">Neque Porro Quisquam</span><br>
-                        <span class ="undertext undertext2">apps, icons, ui</span>
+                <div class="col-4 portfolioexample example4">
+                        <span class ="undertext1">Neque Porro Quisquam</span><br>
+                        <span class ="undertext2">apps, icons, ui</span>
                 </div>
-                <div class="col-4 portfolioexample">
-                        <div><img src="images/t5.jpg"/></div><br>
-                        <span class="undertext undertext1">Neque Porro Quisquam</span><br>
-                        <span class ="undertext undertext2">apps, icons, ui</span>
+                <div class="col-4 portfolioexample example5">
+                        <span class ="undertext1">Neque Porro Quisquam</span><br>
+                        <span class ="undertext2">apps, icons, ui</span>
                 </div>
-                <div class="col-4 portfolioexample">
-                        <div><img src="images/t6.jpg"/></div><br>
-                        <span class="undertext undertext1">Neque Porro Quisquam</span><br>
-                        <span class ="undertext undertext2">apps, icons, ui</span>
+                <div class="col-4 portfolioexample example6">
+                        <span class ="undertext1">Neque Porro Quisquam</span><br>
+                        <span class ="undertext2">apps, icons, ui</span>
                 </div>
-
+            </div>
+            <div class="watch">
+                <img src="images/watch.png"/>
             </div>
         </div>
 
+        <div id="contact" class="sec grid-container">
+            <div class="corners"><img src="images/getintouch.png"/></div>
+            <div class="form col-6">
+                <form>
+                    <input class="name" name="name" placeholder="Your name">
+                    <input class="email" name="email" type="email" placeholder="Your email">
+                    <input class="textarea" name="message" placeholder="Your message"></input>
+                    <input id="submit" name="submit" type="submit" value="Send email">
+                </form>
+            </div>
+            <div class="col-1"></div>
+            <div class="contactdata  col-5">
+                <p class="contacttext">Lorem ipsum dolor sit amet, consectetuer <br>adipiscing elit. Donec odio.Quisque volutpat mattis<br> eros.
+                Nullam malesuada erat ut turpis. <br>Suspendisse urna nibh, viverra non, semper suscipit, posuere a, <br>pede.</p>
+                <p class="adress">1600 Pennsylvania Ave NW, Washington, <br>DC 20500, United States of America.</p>
+                <p class="telephone">T: (202) 456-1111 <br>M: (202) 456-1212</p>
+                <div class="facebook"></div>
+                <div class="twitter"></div>
+                <div class="facebook"></div>
+            </div>
+
+        <div>
+            <a href="#top"><img class="totopbottom" src="images/to-top1.png"/></a>
         </div>
     </div>
 </body>

@@ -24,21 +24,22 @@ header {
   background-image: url(../images/Bhagaskara_01.jpg);
   width: 100%;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 .companyname {
   font-family: Existence;
-  font-size: 3.5em;
+  font-size: 4em;
   color: #fff;
   line-height: 0.3;
   text-align: center;
   padding-top: 10%;
-  padding-bottom: 10%; }
+  padding-bottom: 8%; }
   .companyname span {
     color: #9f449b; }
 
 h3 {
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: lighter;
   color: #fff;
   line-height: 0.5;
@@ -47,11 +48,11 @@ h3 {
 .vestibulum {
   color: #fff;
   font-weight: lighter;
-  line-height: 1.3;
+  line-height: 1;
   text-align: center;
   font-size: 1em;
-  margin-top: 3%;
-  margin-bottom: 10%; }
+  margin-top: 1%;
+  margin-bottom: 5%; }
 
 .picture {
   width: 80%; }
@@ -111,7 +112,7 @@ h3 {
 
 .navbar {
   padding-bottom: 20px;
-  background: white;
+  background: white !important;
   vertical-align: middle; }
 
 .companyname2 {
@@ -159,7 +160,9 @@ a {
 .love1 {
   width: 25%; }
   .love1 .lovepic {
-    padding-bottom: 10%; }
+    padding-bottom: 10%;
+    width: 100%;
+    height: auto; }
   .love1 h4 {
     font-weight: lighter;
     font-size: 1.5em;
@@ -169,7 +172,7 @@ a {
     font-weight: lighter;
     font-size: 1em;
     color: #676767;
-    padding-bottom: 70%; }
+    padding-bottom: 60%; }
 
 .aboutus {
   padding-bottom: 10%; }
@@ -196,6 +199,8 @@ a {
   background-image: url(../images/quotebg.png);
   width: 100%;
   background-size: cover;
+  background-color: #eee;
+  background-attachment: fixed;
   background-repeat: no-repeat; }
 
 .quotemain {
@@ -211,7 +216,7 @@ a {
   padding-bottom: 60px; }
   #ourteam .ourteamimg {
     text-align: center;
-    padding-top: 10%;
+    padding-top: 6%;
     padding-bottom: 4%; }
   #ourteam .imgarr1 {
     background: url(../images/left.png); }
@@ -248,10 +253,110 @@ a {
   border: 1px solid black;
   border-radius: 10%;
   margin: 2px;
-  margin-bottom: 20%; }
+  margin-bottom: 5%; }
+
+.portfolioimages {
+  padding-bottom: 4%; }
 
 .portfolioexample {
-  padding: 5px;
-  text-align: center; }
+  width: calc(33% - 10px);
+  margin: 5px;
+  height: 420px; }
+  .portfolioexample:hover {
+    opacity: 0.4; }
+  .portfolioexample span {
+    position: relative;
+    top: 86%;
+    z-index: -2; }
+
+.undertext1 {
+  font-size: 1.5em; }
+
+.undertext2 {
+  color: #777777; }
+
+.example1 {
+  background-image: url(../images/t1.jpg);
+  background-repeat: no-repeat; }
+
+.example2 {
+  background-image: url(../images/t2.jpg);
+  background-repeat: no-repeat; }
+
+.example3 {
+  background-image: url(../images/t3.jpg);
+  background-repeat: no-repeat; }
+
+.example4 {
+  background-image: url(../images/t4.jpg);
+  background-repeat: no-repeat; }
+
+.example5 {
+  background-image: url(../images/t5.jpg);
+  background-repeat: no-repeat; }
+
+.example6 {
+  background-image: url(../images/t6.jpg);
+  background-repeat: no-repeat; }
+
+.watch {
+  text-align: center;
+  padding-bottom: 5%; }
+  .watch img {
+    height: 60px; }
+
+.form {
+  text-align: left; }
+
+.name {
+  width: 98%;
+  border: 1px solid #000;
+  height: 60px;
+  font-size: 1.5em;
+  margin-bottom: 20px; }
+
+.email {
+  width: 98%;
+  height: 60px;
+  color: #000;
+  border: 1px solid #000;
+  font-size: 1.5em;
+  margin-bottom: 20px; }
+
+.textarea {
+  width: 98%;
+  height: 250px;
+  font-size: 1.5em;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  padding-bottom: 15px; }
+
+#submit {
+  padding-top: 5px;
+  font-size: 30px;
+  color: white;
+  background: #9f449b;
+  border-radius: 7px; }
+
+.contactdata {
+  vertical-align: top;
+  text-align: left;
+  font-size: 1.2em; }
+  .contactdata p {
+    padding-bottom: 8%; }
+  .contactdata .contacttext {
+    display: inline-block;
+    color: #676767; }
+  .contactdata .adress {
+    font-weight: bold;
+    color: #222222; }
+  .contactdata .telephone {
+    font-weight: bold;
+    color: #222222; }
+
+.totopbottom {
+  position: fixed;
+  bottom: 30px;
+  right: 30px; }
 
 /*# sourceMappingURL=style.css.map */
