@@ -41,6 +41,7 @@ header {
 .companyname {
   font-family: Existence;
   font-size: 4em;
+  font-weight: bold;
   color: map_get($Colors,white);
   line-height: 0.3;
   text-align: center;
@@ -397,6 +398,9 @@ a {
   height: 60px;
   font-size: 1.5em;
   margin-bottom: 20px;
+  &:hover{
+    border: 1px solid map_get($Colors, purple);
+  }
 }
 
 .email {
@@ -406,6 +410,9 @@ a {
   border: 1px solid map_get($Colors, black);
   font-size: 1.5em;
   margin-bottom: 20px;
+  &:hover{
+    border: 1px solid map_get($Colors, purple);
+  }
 }
 
 .textarea {
@@ -415,6 +422,12 @@ a {
   border: 1px solid map_get($Colors, black);
   margin-bottom: 20px;
   padding-bottom: 15px;
+  &:hover{
+    border: 1px solid map_get($Colors, purple);
+  }
+  &:focus{
+    border: 1px solid map_get($Colors, lightblue);
+  }
 }
 
 #submit {
@@ -433,7 +446,6 @@ a {
     padding-bottom: 8%;
   }
   .contacttext {
-    display: inline-block;
     color: map_get($Colors, mainFontColor)
   }
   .adress{
@@ -444,11 +456,50 @@ a {
     font-weight: bold;
     color: map_get($Colors, darkGrey)
   }
-}
+  .social{
+    display: inline-block;
+    vertical-align: bottom;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+  }
+  .facebook {
+    background-image: url(../images/f.png);
+    &:hover{
+      background-image: url(../images/fhr.png);
+    }
+  }
+  .twitter{
+    background-image: url(../images/t.png);
+    &:hover{
+      background-image: url(../images/thr.png);
+    }
+  }
+  .google {
+    background-image: url(../images/g.png);
+    &:hover{
+      background-image: url(../images/ghr.png);
+    }
+  }
 
+}
 
 .totopbottom {
   position: fixed;
   bottom: 30px;
   right: 30px;
+}
+
+.companyname3 {
+  font-family: Existence;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: map_get($Colors,mainFontColor);
+  line-height: 0.3;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 8%;
+  span {
+    color: map_get($Colors,purple);
+  }
 }
