@@ -5,8 +5,9 @@
     <title>Bhagaskara.</title>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
-    <link href="css/owl.carousel.css" rel="stylesheet"/>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <script src = "js/jquery-2.1.4.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -18,7 +19,7 @@
             <div class="grid-container" id="top">
 
             <h1 class="companyname">Bhagas<span>kara</span>.</h1>
-            <h3>Fusce rutrum pretium lorem semper nulla.</h3>
+            <h3 class="head">Fusce rutrum pretium lorem semper nulla.</h3>
             <p class="vestibulum">Vestibulum ornare cursus niscum fermentum ornamentum. Mecenat <br>
                 orbi et urbi ora et labora.</p>
             </div>
@@ -69,18 +70,21 @@
                     </div>
                     <div class="love1 col-3">
                         <img class="lovepic lovepic2" src="images/2.png"/>
+                        <div class="onhover"><img src ="images/2hr.png"/></div>
                         <h4>Build with love</h4>
                         <p>Fusce facilisis velit libero, nec <br>dignissim lacus sagittis non. <br>Sed nec porta ante. <br>Pellentesque
                             habitant morbi tristique <br>senectus et.</p>
                     </div>
                     <div class="love1 col-3">
                         <img class="lovepic lovepic3" src="images/3.png"/>
+                        <div class="onhover"><img src ="images/3hr.png"/></div>
                         <h4>Build with love</h4>
                         <p>Fusce facilisis velit libero, nec <br>dignissim lacus sagittis non. <br>Sed nec porta ante. <br>Pellentesque
                             habitant morbi tristique <br>senectus et.</p>
                     </div>
                     <div class="love1 col-3">
                         <img class="lovepic lovepic4" src="images/4.png"/>
+                        <div class="onhover"><img src ="images/4hr.png"/></div>
                         <h4>Build with love</h4>
                         <p>Fusce facilisis velit libero, nec <br>dignissim lacus sagittis non. <br>Sed nec porta ante. <br>Pellentesque
                             habitant morbi tristique <br>senectus et.</p>
@@ -119,14 +123,14 @@
 
         <div id="ourservices" class="sec">
 
-        <div class="interlude">
-            <div class="grid-container quotemain">
-                <img  class="quote " src="images/bubble.png"/>
-                <p>Our services will lorem and ipsum your aliquamm</p>
+            <div class="interlude">
+                <div class="grid-container quotemain">
+                    <img  class="quote " src="images/bubble.png"/>
+                    <p>Our services will lorem and ipsum your aliquamm</p>
+                </div>
             </div>
-        </div>
 
-        <div id="info-section">
+            <div id="info-section">
             <div class="info grid-container">
                 <div class="col-3"><span class="number">365</span><br>
                 <span class="lorem">Lorem ipsum</span></div>
@@ -138,42 +142,87 @@
                 <span class="lorem">Lorem ipsum</span></div>
                 <div class="infoslider"></div>
             </div>
-        </div>
+
+            <div class="slider grid-container">
+            <ul class="sliderlist bxslider">
+                <li><div class="slideelement">
+                    <img src="images/n1.jpg"/>
+                    <h3>"Fusce dapibus, tellus ac cursus commodo, tortor mauris<br>
+                        condimentum. Duis mollis, est non commodo luctus, nisi erat."</h3>
+                    <p>LESALE CHRISTOPER, PINTEREST</p>
+                    </div>
+                </li>
+                <li><div class="slideelement">
+                    <img src="images/n2.jpg" />
+                    <h3>"Fusce dapibus, tellus ac cursus commodo, tortor mauris<br>
+                        condimentum. Duis mollis, est non commodo luctus, nisi erat."</h3>
+                    <p>LESALE CHRISTOPER, PINTEREST</p>
+                </div>
+                </li>
+                <li><div class="slideelement">
+                    <img src="images/n3.jpg" />
+                    <h3>"Fusce dapibus, tellus ac cursus commodo, tortor mauris<br>
+                        condimentum. Duis mollis, est non commodo luctus, nisi erat."</h3>
+                    <p>LESALE CHRISTOPER, PINTEREST</p>
+                </div>
+                </li>
+                <li><div class="slideelement">
+                    <img src="images/n4.jpg" />
+                    <h3>"Fusce dapibus, tellus ac cursus commodo, tortor mauris<br>
+                        condimentum. Duis mollis, est non commodo luctus, nisi erat."</h3>
+                    <p>LESALE CHRISTOPER, PINTEREST</p>
+                </div>
+                </li>
+                <li><div class="slideelement">
+                    <img src="images/n5.jpg" />
+                    <h3>"Fusce dapibus, tellus ac cursus commodo, tortor mauris<br>
+                        condimentum. Duis mollis, est non commodo luctus, nisi erat."</h3>
+                    <p>LESALE CHRISTOPER, PINTEREST</p>
+                </div>
+                </li>
+            </ul>
+            </div>
 
         </div>
 
         <div id="ourportfolio" class="sec grid-container">
             <div class="portfolio">
-                <div class="corners"><img src="images/ourportfolio.png"/></div>
+                <div class="corners cornerspad"><img src="images/ourportfolio.png"/></div>
                 <div class="empty col-4"></div>
-                <div class="select col-1">ALL</div>
-                <div class="select col-1">WEB</div>
-                <div class="select col-1">APPS</div>
-                <div class="select col-1">ICON</div>
+                <div class="select col-1 all"><span>ALL</span></div>
+                <div class="select col-1 web"><span>WEB</span></div>
+                <div class="select col-1 apps"><span>APPS</span></div>
+                <div class="select col-1 icon"><span>ICON</span></div>
                 <div class="empty col-4"></div>
             </div>
             <div class="portfolioimages ">
-                <div class="col-4 portfolioexample example1">
+                <div class="col-4 portfolioexample example1 appim">
+                    <div class="tour-caption"><img src="images/plus.png"/></div>
                         <span class ="undertext1">Neque Porro Quisquam</span><br>
                         <span class ="undertext2">apps, icons, ui</span>
                 </div>
-                <div class="col-4 portfolioexample example2">
+                <div class="col-4 portfolioexample example2 webim">
+                    <div class="tour-caption"><img src="images/plus.png"/></div>
                         <span class ="undertext1">Neque Porro Quisquam</span><br>
                         <span class ="undertext2">apps, icons, ui</span>
                 </div>
-                <div class="col-4 portfolioexample example3">
+                <div class="col-4 portfolioexample example3 appim">
+                    <div class="tour-caption"><img src="images/plus.png"/></div>
                         <span class= "undertext1">Neque Porro Quisquam</span><br>
                         <span class ="undertext2">apps, icons, ui</span>
                 </div>
                 <div class="col-4 portfolioexample example4">
+                    <div class="tour-caption"><img src="images/plus.png"/></div>
                         <span class ="undertext1">Neque Porro Quisquam</span><br>
                         <span class ="undertext2">apps, icons, ui</span>
                 </div>
-                <div class="col-4 portfolioexample example5">
+                <div class="col-4 portfolioexample example5 appim">
+                    <div class="tour-caption"><img src="images/plus.png"/></div>
                         <span class ="undertext1">Neque Porro Quisquam</span><br>
                         <span class ="undertext2">apps, icons, ui</span>
                 </div>
-                <div class="col-4 portfolioexample example6">
+                <div class="col-4 portfolioexample example6 iconim">
+                    <div class="tour-caption"><img src="images/plus.png"/></div>
                         <span class ="undertext1">Neque Porro Quisquam</span><br>
                         <span class ="undertext2">apps, icons, ui</span>
                 </div>
@@ -189,7 +238,7 @@
                 <form>
                     <input class="name" name="name" placeholder="Your name">
                     <input class="email" name="email" type="email" placeholder="Your email">
-                    <input class="textarea" name="message" placeholder="Your message"></input>
+                    <input class="textarea" name="message" placeholder="Your message">
                     <input id="submit" name="submit" type="submit" value="Send email">
                 </form>
             </div>
@@ -204,10 +253,10 @@
                 <div class="google social"></div>
             </div>
         <div>
-            <a href="#top"><img class="totopbottom" src="images/to-top1.png"/></a>
+            <a href="#top"><img class="totopbottom totop" src="images/to-top1.png"/></a>
         </div>
         <footer>
-            <h1 class="companyname3">Bhagas<span>kara</span>.</h1>
+            <h1 class="companyname3 totop"><a href="#">Bhagas<span>kara</span>.</a></h1>
         </footer>
     </div>
 </body>
