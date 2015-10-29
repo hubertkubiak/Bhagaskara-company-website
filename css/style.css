@@ -300,23 +300,59 @@ a:hover {
   padding-top: 6%;
   padding-bottom: 4%;
 }
-#ourteam .imgarr1 {
-  background: url(../images/left.png);
-}
-#ourteam .imgarr2 {
-  background: url(../images/right.png);
-}
 #ourteam #left {
   float: right;
-}
-#ourteam #left:hover {
-  display: none;
 }
 #ourteam #right {
   float: left;
 }
-#ourteam #right:hover {
-  display: none;
+
+.circle {
+  width: 160px;
+  height: 160px;
+  background-color: #cdcdcd;
+  border-radius: 50%;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.circle1 {
+  background: url(../images/profilowe.jpg);
+}
+
+.circle2 {
+  background: url(../images/curie.jpg);
+}
+
+.circle3 {
+  background: url(../images/duda.jpg);
+}
+
+.circle4 {
+  background: url(../images/pikej.jpg);
+}
+
+.circle5 {
+  background: url(../images/szostak.png);
+}
+
+.ourservices {
+  width: 100%;
+}
+
+#owl-demo {
+  text-align: center;
+}
+
+.teammember div h4 {
+  padding: 10px;
+}
+.teammember div span {
+  padding: 10px;
+}
+
+.cornersskills {
+  padding-top: 0;
 }
 
 #info-section {
@@ -334,6 +370,127 @@ a:hover {
   border-radius: 50%;
   text-align: center;
   display: inline-block;
+}
+
+.skills {
+  padding: 0 0 30px 0;
+}
+
+.rightskills h4, .leftskills h4 {
+  float: left;
+}
+.rightskills span, .leftskills span {
+  float: right;
+}
+
+.skillBar {
+  height: 20px;
+  background-color: #cdcdcd;
+}
+
+.Hubert .WebBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 95%;
+}
+.Hubert .GraphicBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 92%;
+}
+.Hubert .HTMLBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 91%;
+}
+.Hubert .AccBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 88%;
+}
+
+.Maria .WebBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 67%;
+}
+.Maria .GraphicBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 77%;
+}
+.Maria .HTMLBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 87%;
+}
+.Maria .AccBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 97%;
+}
+
+.Andrzej .WebBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 95%;
+}
+.Andrzej .GraphicBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 85%;
+}
+.Andrzej .HTMLBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 75%;
+}
+.Andrzej .AccBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 65%;
+}
+
+.Piotr .WebBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 45%;
+}
+.Piotr .GraphicBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 55%;
+}
+.Piotr .HTMLBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 75%;
+}
+.Piotr .AccBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 85%;
+}
+
+.Kasia .WebBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 64%;
+}
+.Kasia .GraphicBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 53%;
+}
+.Kasia .HTMLBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 99%;
+}
+.Kasia .AccBarSet {
+  height: 20px;
+  background-color: #9f449b;
+  width: 61%;
 }
 
 .info {

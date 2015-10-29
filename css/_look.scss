@@ -303,25 +303,81 @@ a {
     padding-top: 6%;
     padding-bottom: 4%;
   }
-  .imgarr1{
-     background: url(../images/left.png);
-   }
-  .imgarr2{
-    background: url(../images/right.png);
-  }
+  //.imgarr1{
+  //   background: url(../images/left.png);
+  // }
+  //.imgarr2{
+  //  background: url(../images/right.png);
+  //}
 
   #left {
     float: right;
-    &:hover {
-      display: none;
+  //  &:hover {
+  //    display: none;
     }
-  }
+  //}
   #right {
     float: left;
-    &:hover {
-      display: none;
+  //  &:hover {
+  //    display: none;
+  //  }
     }
   }
+
+.circle {
+  width: 160px;
+  height: 160px;
+  background-color: map_get($Colors, greyCircle);
+  border-radius: 50%;
+  margin: 60px auto;
+  text-align: center;
+
+}
+
+.circle1 {
+  background: url(../images/profilowe.jpg);
+}
+
+.circle2 {
+  background: url(../images/curie.jpg);
+}
+
+.circle3 {
+  background: url(../images/duda.jpg);
+}
+
+.circle4 {
+  background: url(../images/pikej.jpg);
+}
+
+.circle5 {
+  background: url(../images/szostak.png);
+}
+
+.ourservices{
+  width: 100%;
+}
+
+#owl-demo{
+  text-align: center;
+}
+
+.teammember {
+  div{
+    h4{
+      padding:10px;
+    }
+    span{
+      padding: 10px;
+    }
+    .socials{
+
+    }
+  }
+}
+
+.cornersskills{
+  padding-top: 0;
 }
 
 #info-section {
@@ -342,6 +398,145 @@ a {
     }
   }
 }
+
+
+.skills {
+  padding: 0 0 30px 0;
+}
+
+.rightskills {
+  h4{
+    float: left;
+  }
+  span {
+    float: right;
+  }
+}
+
+.leftskills {
+  @extend .rightskills;
+}
+
+.skillBar {
+  height: 20px;
+  background-color: #cdcdcd;
+}
+
+.Hubert {
+  .WebBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 95%;
+  }
+  .GraphicBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 92%;
+  }
+  .HTMLBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 91%;
+  }
+  .AccBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 88%;
+  }
+}
+
+.Maria {
+  .WebBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 67%;
+  }
+  .GraphicBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 77%;
+  }
+  .HTMLBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 87%;
+  }
+  .AccBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 97%;
+  }
+}
+
+.Andrzej {
+  .WebBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 95%;
+  }
+  .GraphicBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 85%;
+  }
+  .HTMLBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 75%;
+  }
+  .AccBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 65%;
+  }
+}
+
+.Piotr {
+  .WebBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 45%;
+  }
+  .GraphicBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 55%;
+  }
+  .HTMLBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 75%;
+  }
+  .AccBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 85%;
+  }
+}
+
+.Kasia {
+  .WebBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 64%;
+  }
+  .GraphicBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 53%;
+  }
+  .HTMLBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 99%;
+  }
+  .AccBarSet {
+    height: 20px;
+    background-color: #9f449b;
+    width: 61%;
+  }
+}
+
 
 .info {
   padding-top: 2%;

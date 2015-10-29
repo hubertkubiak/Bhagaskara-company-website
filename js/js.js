@@ -131,12 +131,189 @@ $(function(){
 
             });
         }
+        function owlCar () {
+            $("#owl-demo").owlCarousel({
+                navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                items: 3,
+                itemsDesktop:false,
+                itemsDesktopSmall: false,
+                itemsTablet:false,
+                itemsMobile: false
+
+            });
+        }
+        function displaySkills () {
+            $(".skillSet1").show();
+            $(".skillSet2").hide();
+            $(".skillSet3").hide();
+            $(".skillSet4").hide();
+            $(".skillSet5").hide();
+
+            $(".person1").on("click", function(event){
+                $(".skillSet1").show(2000);
+                $(".skillSet2").hide(2000);
+                $(".skillSet3").hide(2000);
+                $(".skillSet4").hide(2000);
+                $(".skillSet5").hide(2000);
+            });
+            $(".person2").on("click", function(event){
+                $(".skillSet1").hide(2000);
+                $(".skillSet2").show(2000);
+                $(".skillSet3").hide(2000);
+                $(".skillSet4").hide(2000);
+                $(".skillSet5").hide(2000);
+            });
+            $(".person3").on("click", function(event){
+                $(".skillSet1").hide(2000);
+                $(".skillSet2").hide(2000);
+                $(".skillSet3").show(2000);
+                $(".skillSet4").hide(2000);
+                $(".skillSet5").hide(2000);
+            });
+            $(".person4").on("click", function(event){
+                $(".skillSet1").hide(2000);
+                $(".skillSet2").hide(2000);
+                $(".skillSet3").hide(2000);
+                $(".skillSet4").show(2000);
+                $(".skillSet5").hide(2000);
+            });
+            $(".person5").on("click", function(event){
+                $(".skillSet1").hide(2000);
+                $(".skillSet2").hide(2000);
+                $(".skillSet3").hide(2000);
+                $(".skillSet4").hide(2000);
+                $(".skillSet5").show(2000);
+            });
+        }
+        //function carousel() {
+        //    var leftArrow = $(".imgarr1"");
+        //    var rightArrow = $(".imgarr2");
+        //
+        //    var person1 = $(".Hubert");
+        //    var person2 = $(".Maria");
+        //    var person3 = $(".Andrzej");
+        //    var person4 = $(".Piotr");
+        //    var person5 = $(".Kasia");
+        //
+        //    var skillset1 = $(".Skills");
+        //    var skillset2 = $(".personTwoSkills");
+        //    var skillset3 = $(".personThreeSkills");
+        //
+        //    var allPersons = $(".allItems");
+        //
+        //    rightArrow.on("click", function(event){
+        //
+        //        event.preventDefault();
+        //        var people = $(".person");
+        //
+        //        people.eq(2).clone(true).prependTo(allPersons);
+        //        people.eq(2).remove();
+        //
+        //        if(people.eq(0).hasClass("person1")) {
+        //            skillset2.hide(500);
+        //            skillset3.hide(500);
+        //            skillset1.show(500);
+        //        } else if (people.eq(0).hasClass("person2")) {
+        //            skillset1.hide(500);
+        //            skillset3.hide(500);
+        //            skillset2.show(500);
+        //        } else if (people.eq(0).hasClass("person3")) {
+        //            skillset1.hide(500);
+        //            skillset2.hide(500);
+        //            skillset3.show(500);
+        //        }
+        //
+        //    });
+        //
+        //    leftArrow.on("click", function(event){
+        //
+        //        event.preventDefault();
+        //        var people = $(".person");
+        //
+        //        people.eq(0).clone(true).appendTo(allPersons);
+        //        people.eq(0).remove();
+        //
+        //        if(people.eq(2).hasClass("person1")) {
+        //            skillset2.hide(500);
+        //            skillset3.hide(500);
+        //            skillset1.show(500);
+        //        } else if (people.eq(2).hasClass("person2")) {
+        //            skillset1.hide(500);
+        //            skillset3.hide(500);
+        //            skillset2.show(500);
+        //        } else if (people.eq(2).hasClass("person3")) {
+        //            skillset1.hide(500);
+        //            skillset2.hide(500);
+        //            skillset3.show(500);
+        //        }
+        //
+        //    });
+        //
+        //}
+        //function popUp() {
+        //
+        //    var photo1 = $(".example1 .tour-caption");
+        //    var photo2 = $(".example2 .tour-caption");
+        //    var photo3 = $(".example3 .tour-caption");
+        //    var photo4 = $(".example4 .tour-caption");
+        //    var photo5 = $(".example5 .tour-caption");
+        //    var photo6 = $(".example6 .tour-caption");
+        //
+        //    //var close = $(".toHome");
+        //    photo1.on("click", function () {
+        //        $(".portfolioimages").css("position", "relative");
+        //    });
+        //    buttonClose.on("click", function (event) {
+        //        event.preventDefault();
+        //        $(".overlay1").css("display", "none");
+        //    });
+        //    photo2.on("click", function () {
+        //        $(".overlay2").css("display", "block");
+        //    });
+        //    buttonClose.on("click", function (event) {
+        //        event.preventDefault();
+        //        $(".overlay2").css("display", "none");
+        //    });
+        //    photo3.on("click", function () {
+        //        $(".overlay3").css("display", "block");
+        //    });
+        //    buttonClose.on("click", function (event) {
+        //        event.preventDefault();
+        //        $(".overlay3").css("display", "none");
+        //    });
+        //    photo4.on("click", function () {
+        //        $(".overlay4").css("display", "block");
+        //    });
+        //    buttonClose.on("click", function (event) {
+        //        event.preventDefault();
+        //        $(".overlay4").css("display", "none");
+        //    });
+        //    photo5.on("click", function () {
+        //        $(".overlay5").css("display", "block");
+        //    });
+        //    buttonClose.on("click", function (event) {
+        //        event.preventDefault();
+        //        $(".overlay5").css("display", "none");
+        //    });
+        //    photo6.on("click", function () {
+        //        $(".overlay6").css("display", "block");
+        //    });
+        //    buttonClose.on("click", function (event) {
+        //        event.preventDefault();
+        //        $(".overlay6").css("display", "none");
+        //    });
+        //}
         return {
             init: init ,
             scrollPage: scrollPage,
             stickyMenu: stickyMenu,
             portfolioChoose: portfolioChoose,
-            bxslider: bxslider
+            bxslider: bxslider,
+            owlCar: owlCar,
+            displaySkills: displaySkills
+            //popUp: popUp
         };
     };
 
@@ -147,6 +324,9 @@ $(function(){
     app.stickyMenu();
     app.portfolioChoose();
     app.bxslider();
+    app.owlCar();
+    app.displaySkills();
+    //app.popUp();
 });
 
 
