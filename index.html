@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <title>Bhagaskara.</title>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <link href="css/jquery-ui.structure.css" rel="stylesheet" />
+    <link href="css/jquery-ui.theme.css" rel="stylesheet" />
     <link href="css/owl.carousel.css" rel="stylesheet" />
     <link href="css/owl.theme.css" rel="stylesheet" />
     <link href="css/owl.transitions.css" rel="stylesheet" />
     <script src = "js/jquery-2.1.4.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
@@ -53,7 +58,7 @@
         <div class="navbar sec">
             <div class="grid-container">
                 <div class="companyname2">Bhagas<span>kara</span>.</div>
-                <ul class = menu>
+                <ul class = "menu">
                     <li class="menu1"><a href="#top">HOME</a></li>
                     <li class="menu1"><a href="#aboutussection">ABOUT</a></li>
                     <li class="menu1"><a href="#ourteam">TEAM</a></li>
@@ -61,8 +66,19 @@
                     <li class="menu1"><a href="#ourportfolio">PORTFOLIO</a></li>
                     <li class="menu1"><a id="notblog">BLOG</a></li>
                     <li class="menu1"><a href="#contact">CONTACT</a></li>
+                    <li class="hamburger"><a><img src="images/ham.png"/></a></li>
                 </ul>
             </div>
+            <ul class = "menuhamburger unwind">
+                <br>
+                <li class="ham"><a href="#top">HOME</a></li>
+                <li class="ham"><a href="#aboutussection">ABOUT</a></li>
+                <li class="ham"><a href="#ourteam">TEAM</a></li>
+                <li class="ham"><a href="#ourservices">SERVICE</a></li>
+                <li class="ham"><a href="#ourportfolio">PORTFOLIO</a></li>
+                <li class="ham"><a id="notblog">BLOG</a></li>
+                <li class="ham"><a href="#contact">CONTACT</a></li>
+            </ul>
         </div>
 
         <div class="sectionlove">
@@ -119,10 +135,8 @@
         </div>
 
         <div id ="ourteam" class="sec grid-container">
-                <div class="ourteamimg"><img  src="images/ourteam.png"/></div>
-                <!--<div class="col-6 ourteamar"><span class="imgarr1"><img id="left" src="images/leftarrowhr.png"/></span></div>-->
-                <!--<div class="col-6 ourteamar"><span class="imgarr2"><img id="right" src="images/rightarrowhr.png"/></span></div>-->
-
+            <div class="ourteamimg"><img  src="images/ourteam.png"/></div>
+            <p class="check">Click to see skills!</p>
             <div id="owl-demo" class="teamslider owl-carousel owl-theme">
                 <div class="item teammember person1">
                     <div>
@@ -165,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="Hubert personSkills skillSet1">
                 <div class="skills">
                     <div class="col-1"></div>
@@ -373,13 +387,13 @@
 
             <div id="info-section">
                 <div class="info grid-container">
-                    <div class="col-3"><span class="number">365</span><br>
+                    <div class="col-3 inf"><span class="number">365</span><br>
+                    <span class="lorem inf">Lorem ipsum</span></div>
+                    <div class="col-3 inf"><span class="number">98%</span><br>
                     <span class="lorem">Lorem ipsum</span></div>
-                    <div class="col-3"><span class="number">98%</span><br>
+                    <div class="col-3 inf"><span class="number">69</span><br>
                     <span class="lorem">Lorem ipsum</span></div>
-                    <div class="col-3"><span class="number">69</span><br>
-                    <span class="lorem">Lorem ipsum</span></div>
-                    <div class="col-3"><span class="number">1,642</span><br>
+                    <div class="col-3 inf"><span class="number">1,642</span><br>
                     <span class="lorem">Lorem ipsum</span></div>
                     <div class="infoslider"></div>
                 </div>

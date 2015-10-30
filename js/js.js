@@ -4,27 +4,35 @@
 $(function(){
 
     var Application = function(){
-        function init() {
-            console.log("init");
-        }
         function bxslider(){
             $('.bxslider').bxSlider({
                 adaptiveHeight: true
             });
+        }
+        function hamburger(){
+            var ham = $(".hamburger");
+            var menuhamburger = $(".menuhamburger");
+            ham.on("click", function(event){
+                menuhamburger.toggleClass("unwind", 500);
+            });
+            var hamlinks = $(".ham a");
+            hamlinks.on("click", function(event){
+                menuhamburger.addClass("unwind", 500);
+            })
         }
         function scrollPage(){
             var navigationOpt = $(".navigation a");
             navigationOpt.on("click", function(event){
                 var hrefs = $(this).attr("href");
                 $('html,body').animate({
-                    scrollTop:$(hrefs).offset().top-40
+                    scrollTop:$(hrefs).offset().top-30
                 }, 1000);
             });
             var menuOpt = $(".menu1 a");
             menuOpt.on("click", function(event){
                 var hrefs = $(this).attr("href");
                 $('html,body').animate({
-                    scrollTop:$(hrefs).offset().top-2
+                    scrollTop:$(hrefs).offset().top-10
                 }, 600);
             });
             var scroll = $(".scroll");
@@ -132,18 +140,29 @@ $(function(){
             });
         }
         function owlCar () {
-            $("#owl-demo").owlCarousel({
-                navigation: true,
-                slideSpeed: 300,
-                paginationSpeed: 400,
-                items: 3,
-                itemsDesktop:false,
-                itemsDesktopSmall: false,
-                itemsTablet:false,
-                itemsMobile: false
-
-            });
-        }
+            if ($(window).width() > 540){
+                $("#owl-demo").owlCarousel({
+                    navigation: true,
+                    slideSpeed: 300,
+                    paginationSpeed: 400,
+                    items: 3,
+                    itemsDesktop:false,
+                    itemsDesktopSmall: false,
+                    itemsTablet:false,
+                    itemsMobile: false
+                })}
+                else {
+                    $("#owl-demo").owlCarousel({
+                        navigation: true,
+                        slideSpeed: 300,
+                        paginationSpeed: 400,
+                        items: 1,
+                        itemsDesktop:false,
+                        itemsDesktopSmall: false,
+                        itemsTablet:false,
+                        itemsMobile: false
+                    })}
+            }
         function displaySkills () {
             $(".skillSet1").show();
             $(".skillSet2").hide();
@@ -306,26 +325,26 @@ $(function(){
         //    });
         //}
         return {
-            init: init ,
             scrollPage: scrollPage,
             stickyMenu: stickyMenu,
             portfolioChoose: portfolioChoose,
             bxslider: bxslider,
             owlCar: owlCar,
-            displaySkills: displaySkills
+            displaySkills: displaySkills,
+            hamburger: hamburger
             //popUp: popUp
         };
     };
 
 
     var app = new Application();
-    app.init();
     app.scrollPage();
     app.stickyMenu();
     app.portfolioChoose();
     app.bxslider();
     app.owlCar();
     app.displaySkills();
+    app.hamburger();
     //app.popUp();
 });
 

@@ -13,3 +13,11 @@ $Colors: (
         footerGrey: #4b4b4b,
         lightBlue: #add8e6,
 );
+
+$smartphone: "(max-width: 400px)";
+
+$tabletSmall: "(min-width: 400px) and (max-width: 690px)";
+
+$tabletBig: "(min-width: 690px) and (max-width: 800px)";
+
+$desktop: "(min-width: 800px)";

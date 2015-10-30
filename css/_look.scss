@@ -37,40 +37,111 @@ header {
   background-attachment: fixed;
 }
 
+@media (min-width: 800px) {
+  .companyname {
+    font-family: Existence;
+    font-size: 4em;
+    font-weight: bold;
+    color: map_get($Colors,white);
+    line-height: 0.3;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 8%;
+    span {
+      color: map_get($Colors,purple);
+    }
+  }
 
-.companyname {
-  font-family: Existence;
-  font-size: 4em;
-  font-weight: bold;
-  color: map_get($Colors,white);
-  line-height: 0.3;
-  text-align: center;
-  padding-top: 10%;
-  padding-bottom: 8%;
-  span {
-    color: map_get($Colors,purple);
+  h3.head {
+    font-size: 2em;
+    font-weight: lighter;
+    color: map_get($Colors,white);
+    line-height: 0.5;
+    text-align: center;
+
+  }
+
+  .vestibulum {
+    color: map_get($Colors,white);
+    font-weight: lighter;
+    line-height: 1;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+    margin-bottom: 5%;
   }
 }
 
-h3.head {
-  font-size: 2em;
-  font-weight: lighter;
-  color: map_get($Colors,white);
-  line-height: 0.5;
-  text-align: center;
+@media (min-width: 400px) and (max-width: 800px) {
+  .companyname {
+    font-family: Existence;
+    font-size: 4em;
+    font-weight: bold;
+    color: map_get($Colors, white);
+    line-height: 1;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 8%;
+    span {
+      color: map_get($Colors, purple);
+    }
+  }
 
+  h3.head {
+    font-size: 2em;
+    font-weight: lighter;
+    color: map_get($Colors, white);
+    line-height: 1;
+    text-align: center;
+
+  }
+
+  .vestibulum {
+    color: map_get($Colors, white);
+    font-weight: lighter;
+    line-height: 1;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+    margin-bottom: 5%;
+  }
 }
 
-.vestibulum {
-  color: map_get($Colors,white);
-  font-weight: lighter;
-  line-height: 1;
-  text-align: center;
-  font-size: 1em;
-  margin-top: 1%;
-  margin-bottom: 5%;
-}
+@media (min-width: 0px) and (max-width: 400px) {
+  .companyname {
+    font-family: Existence;
+    font-size: 3em;
+    font-weight: bold;
+    color: map_get($Colors, white);
+    line-height: 1;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    span {
+      color: map_get($Colors, purple);
+    }
+  }
 
+  h3.head {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: map_get($Colors, white);
+    line-height: 1;
+    padding-bottom: 5%;
+    text-align: center;
+
+  }
+
+  .vestibulum {
+    color: map_get($Colors, white);
+    font-weight: lighter;
+    line-height: 1;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+    margin-bottom: 5%;
+  }
+}
 
 .picture {
   width: 80%;
@@ -125,6 +196,20 @@ h3.head {
   width: calc(100% - 4px);
 }
 
+
+@media #{$desktop} {
+  .navigation {
+    display: block;
+  }
+}
+
+@media #{$smartphone, $tabletSmall, $tabletBig} {
+  .navigation {
+    display: none;
+  }
+}
+
+
 .scroll {
   text-align: center;
   padding-bottom: 5%;
@@ -146,19 +231,96 @@ h3.head {
 }
 
 .companyname2 {
-  font-family: Existence;
-  font-size: 2em;
-  color: map_get($Colors,mainFontColor);
-  line-height: 0.4;
+  font-family: Existence, sans-serif;
+  font-size: 3em;
+  color: map_get($Colors, mainFontColor);
   margin-left: 10px;
   text-align: left;
   list-style: none;
   width: 20%;
   float: left;
   span {
-    color: map_get($Colors,purple);
+    color: map_get($Colors, purple);
   }
 }
+.menu {
+  list-style: none;
+  text-align: right;
+  color: map_get($Colors, mainFontColor);
+}
+
+
+@media (min-width: 800px) {
+  .companyname2 {
+    font-size: 2em;
+    line-height: 0.5;
+    padding-top: 3px;
+  }
+  li {
+    margin-left: 20px;
+  }
+  .menu li.hamburger {
+    display: none;
+  }
+
+}
+
+@media #{$tabletBig}{
+  .companyname2 {
+    font-size: 1.5em;
+    line-height: 1;
+    padding-top: 0;
+  }
+  li{
+      font-size: 0.8em;
+      margin-left: 100px;
+    }
+  .menu li.hamburger {
+    display: none;
+  }
+}
+
+@media #{$smartphone, $tabletSmall} {
+
+  .navbar{
+    min-height: 40px;
+  }
+  .companyname2 {
+    font-size: 1.5em;
+    line-height: 1;
+  }
+  .menu{
+    position: relative;
+  }
+  .menu.ul {
+    margin-top: 0;
+  }
+  .menu li.menu1 {
+    display: none;
+  }
+  li.hamburger {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 20px;
+  }
+}
+
+.menuhamburger{
+  list-style: none;
+  text-align: center;
+  font-size: 2.3em;
+  width: 100%;
+  li:nth-child(odd) {
+    background: map_get($Colors, lightGreyBackground);;
+  }
+}
+.unwind {
+  height:0;
+  font-size:0;
+}
+
+
 
 .sticky {
   position: fixed;
@@ -172,7 +334,6 @@ h3.head {
     list-style: none;
     text-align: right;
     color: map_get($Colors, mainFontColor);
-
   li{
     display: inline-block;
     margin-left: 20px;
@@ -195,12 +356,20 @@ a {
   background-color: map_get($Colors, lightGreyBackground);
 }
 
-.withlove {
-  padding-top: 10%;
+@media #{$desktop, $tabletBig}{
+  .withlove {
+    padding-top: 10%;
+    text-align: center;
+  }
+}
+
+@media #{$smartphone, $tabletSmall}{
+  .withlove {
+    text-align: center;
+  }
 }
 
 .love1 {
-  width: 25%;
   position: relative;
   .lovepic {
     padding-bottom: 10%;
@@ -239,28 +408,78 @@ a {
       }
     }
   }
-
-
 }
+
+@media #{$desktop, $tabletBig, $tabletSmall}{
+  .love1 {
+    display: inline-block;
+  }
+}
+
+@media #{$tabletSmall}{
+  .love1{
+    margin: 40px;
+  }
+}
+
+
+@media #{$smartphone} {
+  .love1 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 
 .aboutus {
   padding-bottom: 10%;
+    .col-5 {
+      color: map_get($Colors, mainFontColor);
+      display: inline-block;
+      line-height: 1.5;
+      padding-left: 30px;
+    }
+    .learnmore {
+      padding-top: 20%;
+    }
+}
+
+@media #{$desktop, $tabletBig}{
   .screens {
     display: inline-block;
     float: left;
-
   }
   .col-5 {
-    color: map_get($Colors, mainFontColor);
     display: inline-block;
     text-align: left;
-    line-height: 1.5;
-    padding-left: 30px;
   }
   .learnmore {
-    padding-top: 20%;
     text-align: left;
     display: inline-block;
+  }
+}
+
+@media #{$smartphone, $tabletSmall}{
+  .screens {
+    display: block;
+    margin: 0 auto;
+  }
+  .aboutus{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .col-5 {
+    padding-top: 4%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .learnmore {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -297,31 +516,26 @@ a {
 }
 #ourteam {
   padding-bottom: 60px;
-
   .ourteamimg {
     text-align: center;
     padding-top: 6%;
     padding-bottom: 4%;
   }
-  //.imgarr1{
-  //   background: url(../images/left.png);
-  // }
-  //.imgarr2{
-  //  background: url(../images/right.png);
-  //}
-
   #left {
     float: right;
-  //  &:hover {
-  //    display: none;
     }
-  //}
   #right {
     float: left;
-  //  &:hover {
-  //    display: none;
-  //  }
     }
+  p.check{
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    background: map_get($Colors, purple);
+    border-radius: 5px;
+    width: 20%;
+    margin: 0 auto;
+  }
   }
 
 .circle {
@@ -331,7 +545,9 @@ a {
   border-radius: 50%;
   margin: 60px auto;
   text-align: center;
-
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .circle1 {
@@ -360,6 +576,9 @@ a {
 
 #owl-demo{
   text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .teammember {
@@ -389,6 +608,7 @@ a {
       overflow: hidden;
       div.slideelement{
         padding-bottom: 5%;
+        text-align: center;
         img {
           border-radius: 50%;
           text-align: center;
@@ -542,10 +762,23 @@ a {
   padding-top: 2%;
   padding-bottom: 5%;
 }
+
+@media #{$smartphone, $tabletSmall} {
+  .info{
+    margin: 0 auto;
+    text-align: center;
+    .inf{
+      width: 40%;
+      font-size: 1em;
+      text-align: center;
+    }
+  }
+}
 .number{
   float: left;
   font-size: 4em;
   color: map_get($Colors, darkGrey);
+  clear: both;
 }
 
 .lorem{
@@ -627,6 +860,11 @@ a {
 .example1 {
   background-image: url(../images/t1.jpg);
   background-repeat: no-repeat;
+  &:hover{
+    width:80% ;
+    height:80%;
+    background-size:cover;
+  }
 }
 
 .example2 {

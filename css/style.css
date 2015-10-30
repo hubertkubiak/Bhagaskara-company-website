@@ -34,38 +34,106 @@ header {
   background-attachment: fixed;
 }
 
-.companyname {
-  font-family: Existence;
-  font-size: 4em;
-  font-weight: bold;
-  color: #fff;
-  line-height: 0.3;
-  text-align: center;
-  padding-top: 10%;
-  padding-bottom: 8%;
-}
-.companyname span {
-  color: #9f449b;
-}
+@media (min-width: 800px) {
+  .companyname {
+    font-family: Existence;
+    font-size: 4em;
+    font-weight: bold;
+    color: #fff;
+    line-height: 0.3;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 8%;
+  }
+  .companyname span {
+    color: #9f449b;
+  }
 
-h3.head {
-  font-size: 2em;
-  font-weight: lighter;
-  color: #fff;
-  line-height: 0.5;
-  text-align: center;
-}
+  h3.head {
+    font-size: 2em;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 0.5;
+    text-align: center;
+  }
 
-.vestibulum {
-  color: #fff;
-  font-weight: lighter;
-  line-height: 1;
-  text-align: center;
-  font-size: 1em;
-  margin-top: 1%;
-  margin-bottom: 5%;
+  .vestibulum {
+    color: #fff;
+    font-weight: lighter;
+    line-height: 1;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+    margin-bottom: 5%;
+  }
 }
+@media (min-width: 400px) and (max-width: 800px) {
+  .companyname {
+    font-family: Existence;
+    font-size: 4em;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 8%;
+  }
+  .companyname span {
+    color: #9f449b;
+  }
 
+  h3.head {
+    font-size: 2em;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .vestibulum {
+    color: #fff;
+    font-weight: lighter;
+    line-height: 1;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 0px) and (max-width: 400px) {
+  .companyname {
+    font-family: Existence;
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .companyname span {
+    color: #9f449b;
+  }
+
+  h3.head {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 1;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+
+  .vestibulum {
+    color: #fff;
+    font-weight: lighter;
+    line-height: 1;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1%;
+    margin-bottom: 5%;
+  }
+}
 .picture {
   width: 80%;
 }
@@ -128,6 +196,16 @@ h3.head {
   width: calc(100% - 4px);
 }
 
+@media (min-width: 800px) {
+  .navigation {
+    display: block;
+  }
+}
+@media (max-width: 400px), (min-width: 400px) and (max-width: 690px), (min-width: 690px) and (max-width: 800px) {
+  .navigation {
+    display: none;
+  }
+}
 .scroll {
   text-align: center;
   padding-bottom: 5%;
@@ -147,10 +225,9 @@ h3.head {
 }
 
 .companyname2 {
-  font-family: Existence;
-  font-size: 2em;
+  font-family: Existence, sans-serif;
+  font-size: 3em;
   color: #676767;
-  line-height: 0.4;
   margin-left: 10px;
   text-align: left;
   list-style: none;
@@ -159,6 +236,87 @@ h3.head {
 }
 .companyname2 span {
   color: #9f449b;
+}
+
+.menu {
+  list-style: none;
+  text-align: right;
+  color: #676767;
+}
+
+@media (min-width: 800px) {
+  .companyname2 {
+    font-size: 2em;
+    line-height: 0.5;
+    padding-top: 3px;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  .menu li.hamburger {
+    display: none;
+  }
+}
+@media (min-width: 690px) and (max-width: 800px) {
+  .companyname2 {
+    font-size: 1.5em;
+    line-height: 1;
+    padding-top: 0;
+  }
+
+  li {
+    font-size: 0.8em;
+    margin-left: 100px;
+  }
+
+  .menu li.hamburger {
+    display: none;
+  }
+}
+@media (max-width: 400px), (min-width: 400px) and (max-width: 690px) {
+  .navbar {
+    min-height: 40px;
+  }
+
+  .companyname2 {
+    font-size: 1.5em;
+    line-height: 1;
+  }
+
+  .menu {
+    position: relative;
+  }
+
+  .menu.ul {
+    margin-top: 0;
+  }
+
+  .menu li.menu1 {
+    display: none;
+  }
+
+  li.hamburger {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 20px;
+  }
+}
+.menuhamburger {
+  list-style: none;
+  text-align: center;
+  font-size: 2.3em;
+  width: 100%;
+}
+.menuhamburger li:nth-child(odd) {
+  background: #eee;
+}
+
+.unwind {
+  height: 0;
+  font-size: 0;
 }
 
 .sticky {
@@ -194,12 +352,18 @@ a:hover {
   background-color: #eee;
 }
 
-.withlove {
-  padding-top: 10%;
+@media (min-width: 800px), (min-width: 690px) and (max-width: 800px) {
+  .withlove {
+    padding-top: 10%;
+    text-align: center;
+  }
 }
-
+@media (max-width: 400px), (min-width: 400px) and (max-width: 690px) {
+  .withlove {
+    text-align: center;
+  }
+}
 .love1 {
-  width: 25%;
   position: relative;
 }
 .love1 .lovepic {
@@ -240,26 +404,77 @@ a:hover {
   opacity: 1;
 }
 
+@media (min-width: 800px), (min-width: 690px) and (max-width: 800px), (min-width: 400px) and (max-width: 690px) {
+  .love1 {
+    display: inline-block;
+  }
+}
+@media (min-width: 400px) and (max-width: 690px) {
+  .love1 {
+    margin: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .love1 {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 .aboutus {
   padding-bottom: 10%;
-}
-.aboutus .screens {
-  display: inline-block;
-  float: left;
 }
 .aboutus .col-5 {
   color: #676767;
   display: inline-block;
-  text-align: left;
   line-height: 1.5;
   padding-left: 30px;
 }
 .aboutus .learnmore {
   padding-top: 20%;
-  text-align: left;
-  display: inline-block;
 }
 
+@media (min-width: 800px), (min-width: 690px) and (max-width: 800px) {
+  .screens {
+    display: inline-block;
+    float: left;
+  }
+
+  .col-5 {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .learnmore {
+    text-align: left;
+    display: inline-block;
+  }
+}
+@media (max-width: 400px), (min-width: 400px) and (max-width: 690px) {
+  .screens {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .aboutus {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .col-5 {
+    padding-top: 4%;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .learnmore {
+    display: block;
+    margin: 0 auto;
+  }
+}
 .corners {
   text-align: center;
   padding-top: 8%;
@@ -306,6 +521,15 @@ a:hover {
 #ourteam #right {
   float: left;
 }
+#ourteam p.check {
+  font-size: 1em;
+  text-align: center;
+  color: white;
+  background: #9f449b;
+  border-radius: 5px;
+  width: 20%;
+  margin: 0 auto;
+}
 
 .circle {
   width: 160px;
@@ -314,6 +538,9 @@ a:hover {
   border-radius: 50%;
   margin: 60px auto;
   text-align: center;
+}
+.circle:hover {
+  cursor: pointer;
 }
 
 .circle1 {
@@ -343,6 +570,9 @@ a:hover {
 #owl-demo {
   text-align: center;
 }
+#owl-demo:hover {
+  cursor: pointer;
+}
 
 .teammember div h4 {
   padding: 10px;
@@ -365,6 +595,7 @@ a:hover {
 }
 #info-section .slider .sliderlist div.slideelement {
   padding-bottom: 5%;
+  text-align: center;
 }
 #info-section .slider .sliderlist div.slideelement img {
   border-radius: 50%;
@@ -498,10 +729,22 @@ a:hover {
   padding-bottom: 5%;
 }
 
+@media (max-width: 400px), (min-width: 400px) and (max-width: 690px) {
+  .info {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .info .inf {
+    width: 40%;
+    font-size: 1em;
+    text-align: center;
+  }
+}
 .number {
   float: left;
   font-size: 4em;
   color: #222222;
+  clear: both;
 }
 
 .lorem {
@@ -583,6 +826,11 @@ a:hover {
 .example1 {
   background-image: url(../images/t1.jpg);
   background-repeat: no-repeat;
+}
+.example1:hover {
+  width: 80%;
+  height: 80%;
+  background-size: cover;
 }
 
 .example2 {
