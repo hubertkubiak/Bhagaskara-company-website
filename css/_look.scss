@@ -489,6 +489,7 @@ a {
   padding-bottom: 8%;
 }
 
+
 .cornerspad {
   padding-top: 7%;
   padding-bottom: 8%;
@@ -769,13 +770,15 @@ a {
     text-align: center;
     .inf{
       width: 40%;
-      font-size: 1em;
-      text-align: center;
+      span{
+        padding: 5px;
+        font-size: 1.5em;
+      }
     }
   }
 }
 .number{
-  float: left;
+
   font-size: 4em;
   color: map_get($Colors, darkGrey);
   clear: both;
@@ -783,7 +786,7 @@ a {
 
 .lorem{
   clear:both;
-  float: left;
+
   color: map_get($Colors, darkGrey);
 }
 

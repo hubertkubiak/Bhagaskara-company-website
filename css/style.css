@@ -736,12 +736,13 @@ a:hover {
   }
   .info .inf {
     width: 40%;
-    font-size: 1em;
-    text-align: center;
+  }
+  .info .inf span {
+    padding: 5px;
+    font-size: 1.5em;
   }
 }
 .number {
-  float: left;
   font-size: 4em;
   color: #222222;
   clear: both;
@@ -749,7 +750,6 @@ a:hover {
 
 .lorem {
   clear: both;
-  float: left;
   color: #222222;
 }
 
