@@ -477,10 +477,16 @@ a:hover {
 }
 .corners {
   text-align: center;
+  display: block;
   padding-top: 8%;
   padding-bottom: 8%;
 }
 
+@media (max-width: 400px) {
+  .corners img {
+    width: 80%;
+  }
+}
 .cornerspad {
   padding-top: 7%;
   padding-bottom: 8%;
@@ -507,6 +513,11 @@ a:hover {
   padding-bottom: 10%;
 }
 
+@media (max-width: 400px), (min-width: 400px) and (max-width: 690px) {
+  .quotemain p {
+    font-size: 1.5em;
+  }
+}
 #ourteam {
   padding-bottom: 60px;
 }
@@ -757,6 +768,16 @@ a:hover {
   clear: both;
 }
 
+@media (max-width: 580px) {
+  .portfolio {
+    text-align: center;
+  }
+  .portfolio .select {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+  }
+}
 .select {
   line-height: 2em;
   border: 1px solid black;
@@ -779,6 +800,7 @@ a:hover {
 
 .portfolioimages {
   padding-bottom: 4%;
+  text-align: center;
 }
 
 .portfolioexample {
@@ -790,9 +812,16 @@ a:hover {
 .portfolioexample span {
   position: relative;
   top: 86%;
+  height: 100px;
   z-index: -2;
 }
 
+@media (max-width: 400px) {
+  .portfolioexample {
+    display: block;
+    width: 100%;
+  }
+}
 .tour-caption {
   background-color: transparent;
   top: 0;
@@ -815,10 +844,21 @@ a:hover {
   opacity: 1;
 }
 
-.undertext1 {
-  font-size: 1.5em;
+@media (max-width: 400px), (min-width: 400px) and (max-width: 690px), (min-width: 690px) and (max-width: 800px) {
+  .tour-caption img {
+    display: none;
+  }
 }
-
+@media (min-width: 800px) {
+  .undertext1 {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 690px) and (max-width: 800px), (min-width: 400px) and (max-width: 690px), (max-width: 400px) {
+  .undertext1 {
+    font-size: 1em;
+  }
+}
 .undertext2 {
   color: #777777;
 }
@@ -910,10 +950,11 @@ a:hover {
 
 #submit {
   padding-top: 5px;
-  font-size: 30px;
+  font-size: 1.3em;
   color: white;
   background: #9f449b;
   border-radius: 7px;
+  width: 50%;
 }
 
 .contactdata {
@@ -961,6 +1002,39 @@ a:hover {
   background-image: url(../images/ghr.png);
 }
 
+@media (max-width: 400px), (min-width: 400px) and (max-width: 690px) {
+  .contactcontent {
+    text-align: center;
+  }
+
+  form {
+    text-align: center;
+    width: 100%;
+  }
+
+  .email {
+    font-size: 1em;
+  }
+
+  .name {
+    font-size: 1em;
+  }
+
+  .textarea {
+    font-size: 1em;
+  }
+
+  #submit {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  .contactdata {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 .totopbottom {
   position: fixed;
   bottom: 30px;

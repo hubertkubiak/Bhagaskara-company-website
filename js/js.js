@@ -114,12 +114,12 @@ $(function(){
                     menu.addClass("sticky");
                 }
                 if( menu.hasClass("sticky") &&
-                    $(this).scrollTop() < lastMenuPositionFromTop) {
+                    $(this).scrollTop()< lastMenuPositionFromTop) {
                     menu.removeClass("sticky");
                 }
                 sections.each(function(index){
                     if(index + 1 >= sections.length){
-                        if( sections.eq(index).offset().top < $(window).scrollTop()){
+                        if( sections.eq(index).offset().top-30 < $(window).scrollTop()){
                             links.eq(index).addClass("active");
                         }
                         else{
@@ -127,8 +127,8 @@ $(function(){
                         }
                     }
                     else{
-                        if( sections.eq(index).offset().top < $(window).scrollTop() &&
-                            sections.eq(index + 1).offset().top > $(window).scrollTop()){
+                        if( sections.eq(index).offset().top-30 < $(window).scrollTop() &&
+                            sections.eq(index + 1).offset().top-30 > $(window).scrollTop()){
                             links.eq(index).addClass("active");
                         }
                         else{
@@ -206,71 +206,6 @@ $(function(){
                 $(".skillSet5").show(2000);
             });
         }
-        //function carousel() {
-        //    var leftArrow = $(".imgarr1"");
-        //    var rightArrow = $(".imgarr2");
-        //
-        //    var person1 = $(".Hubert");
-        //    var person2 = $(".Maria");
-        //    var person3 = $(".Andrzej");
-        //    var person4 = $(".Piotr");
-        //    var person5 = $(".Kasia");
-        //
-        //    var skillset1 = $(".Skills");
-        //    var skillset2 = $(".personTwoSkills");
-        //    var skillset3 = $(".personThreeSkills");
-        //
-        //    var allPersons = $(".allItems");
-        //
-        //    rightArrow.on("click", function(event){
-        //
-        //        event.preventDefault();
-        //        var people = $(".person");
-        //
-        //        people.eq(2).clone(true).prependTo(allPersons);
-        //        people.eq(2).remove();
-        //
-        //        if(people.eq(0).hasClass("person1")) {
-        //            skillset2.hide(500);
-        //            skillset3.hide(500);
-        //            skillset1.show(500);
-        //        } else if (people.eq(0).hasClass("person2")) {
-        //            skillset1.hide(500);
-        //            skillset3.hide(500);
-        //            skillset2.show(500);
-        //        } else if (people.eq(0).hasClass("person3")) {
-        //            skillset1.hide(500);
-        //            skillset2.hide(500);
-        //            skillset3.show(500);
-        //        }
-        //
-        //    });
-        //
-        //    leftArrow.on("click", function(event){
-        //
-        //        event.preventDefault();
-        //        var people = $(".person");
-        //
-        //        people.eq(0).clone(true).appendTo(allPersons);
-        //        people.eq(0).remove();
-        //
-        //        if(people.eq(2).hasClass("person1")) {
-        //            skillset2.hide(500);
-        //            skillset3.hide(500);
-        //            skillset1.show(500);
-        //        } else if (people.eq(2).hasClass("person2")) {
-        //            skillset1.hide(500);
-        //            skillset3.hide(500);
-        //            skillset2.show(500);
-        //        } else if (people.eq(2).hasClass("person3")) {
-        //            skillset1.hide(500);
-        //            skillset2.hide(500);
-        //            skillset3.show(500);
-        //        }
-        //
-        //    });
-        //
-        //}
         //function popUp() {
         //
         //    var photo1 = $(".example1 .tour-caption");

@@ -485,8 +485,17 @@ a {
 
 .corners{
   text-align: center;
+  display: block;
   padding-top: 8%;
   padding-bottom: 8%;
+}
+
+@media #{$smartphone}{
+  .corners {
+    img {
+      width: 80%;
+    }
+  }
 }
 
 
@@ -515,6 +524,15 @@ a {
     padding-bottom: 10%;
   }
 }
+
+@media #{$smartphone, $tabletSmall}{
+  .quotemain{
+    p{
+      font-size: 1.5em;
+    }
+  }
+}
+
 #ourteam {
   padding-bottom: 60px;
   .ourteamimg {
@@ -777,8 +795,8 @@ a {
     }
   }
 }
-.number{
 
+.number{
   font-size: 4em;
   color: map_get($Colors, darkGrey);
   clear: both;
@@ -786,12 +804,22 @@ a {
 
 .lorem{
   clear:both;
-
   color: map_get($Colors, darkGrey);
 }
 
 #ourportfolio {
   clear: both;
+}
+
+@media #{$tabletMedium}{
+  .portfolio{
+    text-align: center;
+    .select {
+      width: 120px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
 }
 
 .select {
@@ -800,6 +828,7 @@ a {
   border-radius: 10%;
   margin: 2px;
   margin-bottom: 5%;
+
   &:focus {
     border-color: map_get($Colors, lightblue);
   }
@@ -816,6 +845,7 @@ a {
 
 .portfolioimages {
   padding-bottom: 4%;
+  text-align: center;
 }
 .portfolioexample {
   width: calc(33% - 10px);
@@ -825,7 +855,15 @@ a {
   span {
     position:relative;
     top: 86%;
+    height: 100px;
     z-index: -2;
+  }
+}
+
+@media #{$smartphone}{
+  .portfolioexample {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -851,9 +889,24 @@ a {
   }
 }
 
+@media #{$smartphone, $tabletSmall, $tabletBig}{
+  .tour-caption {
+    img{
+      display: none;
+    }
+  }
+}
 
-.undertext1 {
-  font-size: 1.5em;
+@media #{$desktop}{
+  .undertext1 {
+    font-size: 1.5em;
+  }
+}
+
+@media #{$tabletBig, $tabletSmall, $smartphone}{
+  .undertext1 {
+    font-size: 1em;
+  }
 }
 
 .undertext2 {
@@ -949,10 +1002,11 @@ a {
 
 #submit {
   padding-top: 5px;
-  font-size: 30px;
+  font-size: 1.3em;
   color: white;
   background: map_get($Colors, purple);
   border-radius: 7px;
+  width: 50%;
 }
 
 .contactdata {
@@ -1000,6 +1054,35 @@ a {
   }
 
 }
+
+@media #{$smartphone, $tabletSmall}{
+  .contactcontent {
+    text-align: center;
+  }
+  form{
+    text-align: center;
+    width: 100%;
+  }
+  .email{
+    font-size: 1em;
+  }
+  .name{
+    font-size: 1em;
+  }
+  .textarea{
+    font-size: 1em;
+  }
+  #submit{
+    margin: 0 auto;
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .contactdata{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 
 .totopbottom {
   position: fixed;
