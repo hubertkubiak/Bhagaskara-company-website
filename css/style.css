@@ -581,15 +581,14 @@ a:hover {
 #owl-demo {
   text-align: center;
 }
-#owl-demo:hover {
-  cursor: pointer;
-}
 
 .teammember div h4 {
   padding: 10px;
+  cursor: pointer;
 }
 .teammember div span {
   padding: 10px;
+  cursor: pointer;
 }
 
 .cornersskills {
@@ -800,7 +799,8 @@ a:hover {
 
 .portfolioimages {
   padding-bottom: 4%;
-  text-align: center;
+  position: relative;
+  margin: 0 auto;
 }
 
 .portfolioexample {
@@ -866,11 +866,6 @@ a:hover {
 .example1 {
   background-image: url(../images/t1.jpg);
   background-repeat: no-repeat;
-}
-.example1:hover {
-  width: 80%;
-  height: 80%;
-  background-size: cover;
 }
 
 .example2 {
@@ -976,29 +971,32 @@ a:hover {
   font-weight: bold;
   color: #222222;
 }
-.contactdata .social {
+
+.social {
   display: inline-block;
-  vertical-align: bottom;
   background-repeat: no-repeat;
   height: 50px;
   width: 50px;
 }
-.contactdata .facebook {
+
+.facebook {
   background-image: url(../images/f.png);
 }
-.contactdata .facebook:hover {
+.facebook:hover {
   background-image: url(../images/fhr.png);
 }
-.contactdata .twitter {
+
+.twitter {
   background-image: url(../images/t.png);
 }
-.contactdata .twitter:hover {
+.twitter:hover {
   background-image: url(../images/thr.png);
 }
-.contactdata .google {
+
+.google {
   background-image: url(../images/g.png);
 }
-.contactdata .google:hover {
+.google:hover {
   background-image: url(../images/ghr.png);
 }
 

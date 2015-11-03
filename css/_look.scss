@@ -595,18 +595,17 @@ a {
 
 #owl-demo{
   text-align: center;
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .teammember {
   div{
     h4{
       padding:10px;
+      cursor: pointer;
     }
     span{
       padding: 10px;
+      cursor: pointer;
     }
     .socials{
 
@@ -845,7 +844,8 @@ a {
 
 .portfolioimages {
   padding-bottom: 4%;
-  text-align: center;
+  position: relative;
+  margin: 0 auto;
 }
 .portfolioexample {
   width: calc(33% - 10px);
@@ -916,11 +916,6 @@ a {
 .example1 {
   background-image: url(../images/t1.jpg);
   background-repeat: no-repeat;
-  &:hover{
-    width:80% ;
-    height:80%;
-    background-size:cover;
-  }
 }
 
 .example2 {
@@ -947,6 +942,7 @@ a {
   background-image: url(../images/t6.jpg);
   background-repeat: no-repeat;
 }
+
 
 
 .watch {
@@ -1027,32 +1023,34 @@ a {
     font-weight: bold;
     color: map_get($Colors, darkGrey)
   }
-  .social{
-    display: inline-block;
-    vertical-align: bottom;
-    background-repeat: no-repeat;
-    height: 50px;
-    width: 50px;
-  }
-  .facebook {
-    background-image: url(../images/f.png);
-    &:hover{
-      background-image: url(../images/fhr.png);
-    }
-  }
-  .twitter{
-    background-image: url(../images/t.png);
-    &:hover{
-      background-image: url(../images/thr.png);
-    }
-  }
-  .google {
-    background-image: url(../images/g.png);
-    &:hover{
-      background-image: url(../images/ghr.png);
-    }
-  }
+}
 
+
+.social{
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+}
+
+.facebook {
+  background-image: url(../images/f.png);
+  &:hover{
+    background-image: url(../images/fhr.png);
+  }
+}
+.twitter{
+  background-image: url(../images/t.png);
+  &:hover{
+    background-image: url(../images/thr.png);
+  }
+}
+
+.google {
+  background-image: url(../images/g.png);
+  &:hover{
+    background-image: url(../images/ghr.png);
+  }
 }
 
 @media #{$smartphone, $tabletSmall}{

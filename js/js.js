@@ -170,35 +170,35 @@ $(function(){
             $(".skillSet4").hide();
             $(".skillSet5").hide();
 
-            $(".person1").on("click", function(event){
+            $(".clickable1").on("click", function(event){
                 $(".skillSet1").show(2000);
                 $(".skillSet2").hide(2000);
                 $(".skillSet3").hide(2000);
                 $(".skillSet4").hide(2000);
                 $(".skillSet5").hide(2000);
             });
-            $(".person2").on("click", function(event){
+            $(".clickable2").on("click", function(event){
                 $(".skillSet1").hide(2000);
                 $(".skillSet2").show(2000);
                 $(".skillSet3").hide(2000);
                 $(".skillSet4").hide(2000);
                 $(".skillSet5").hide(2000);
             });
-            $(".person3").on("click", function(event){
+            $(".clickable3").on("click", function(event){
                 $(".skillSet1").hide(2000);
                 $(".skillSet2").hide(2000);
                 $(".skillSet3").show(2000);
                 $(".skillSet4").hide(2000);
                 $(".skillSet5").hide(2000);
             });
-            $(".person4").on("click", function(event){
+            $(".clickable4").on("click", function(event){
                 $(".skillSet1").hide(2000);
                 $(".skillSet2").hide(2000);
                 $(".skillSet3").hide(2000);
                 $(".skillSet4").show(2000);
                 $(".skillSet5").hide(2000);
             });
-            $(".person5").on("click", function(event){
+            $(".clickable5").on("click", function(event){
                 $(".skillSet1").hide(2000);
                 $(".skillSet2").hide(2000);
                 $(".skillSet3").hide(2000);
@@ -206,59 +206,17 @@ $(function(){
                 $(".skillSet5").show(2000);
             });
         }
-        //function popUp() {
-        //
-        //    var photo1 = $(".example1 .tour-caption");
-        //    var photo2 = $(".example2 .tour-caption");
-        //    var photo3 = $(".example3 .tour-caption");
-        //    var photo4 = $(".example4 .tour-caption");
-        //    var photo5 = $(".example5 .tour-caption");
-        //    var photo6 = $(".example6 .tour-caption");
-        //
-        //    //var close = $(".toHome");
-        //    photo1.on("click", function () {
-        //        $(".portfolioimages").css("position", "relative");
-        //    });
-        //    buttonClose.on("click", function (event) {
-        //        event.preventDefault();
-        //        $(".overlay1").css("display", "none");
-        //    });
-        //    photo2.on("click", function () {
-        //        $(".overlay2").css("display", "block");
-        //    });
-        //    buttonClose.on("click", function (event) {
-        //        event.preventDefault();
-        //        $(".overlay2").css("display", "none");
-        //    });
-        //    photo3.on("click", function () {
-        //        $(".overlay3").css("display", "block");
-        //    });
-        //    buttonClose.on("click", function (event) {
-        //        event.preventDefault();
-        //        $(".overlay3").css("display", "none");
-        //    });
-        //    photo4.on("click", function () {
-        //        $(".overlay4").css("display", "block");
-        //    });
-        //    buttonClose.on("click", function (event) {
-        //        event.preventDefault();
-        //        $(".overlay4").css("display", "none");
-        //    });
-        //    photo5.on("click", function () {
-        //        $(".overlay5").css("display", "block");
-        //    });
-        //    buttonClose.on("click", function (event) {
-        //        event.preventDefault();
-        //        $(".overlay5").css("display", "none");
-        //    });
-        //    photo6.on("click", function () {
-        //        $(".overlay6").css("display", "block");
-        //    });
-        //    buttonClose.on("click", function (event) {
-        //        event.preventDefault();
-        //        $(".overlay6").css("display", "none");
-        //    });
-        //}
+        function fancy(){
+            $(".fancybox-button").fancybox({
+                prevEffect		: 'none',
+                nextEffect		: 'none',
+                closeBtn		: false,
+                helpers		: {
+                    title	: { type : 'inside' },
+                    buttons	: {}
+                }
+            });
+        }
         return {
             scrollPage: scrollPage,
             stickyMenu: stickyMenu,
@@ -266,8 +224,8 @@ $(function(){
             bxslider: bxslider,
             owlCar: owlCar,
             displaySkills: displaySkills,
-            hamburger: hamburger
-            //popUp: popUp
+            hamburger: hamburger,
+            fancy: fancy
         };
     };
 
@@ -280,29 +238,8 @@ $(function(){
     app.owlCar();
     app.displaySkills();
     app.hamburger();
-    //app.popUp();
+    app.fancy();
 });
 
 
 
-
-
-
-/*
-
- $(function(){
- $('#left').mouseover(
- function(){ $(this).hide()}
- );
- $('#left').mouseleave(
- function(){ $(this).show() }
- );
- $('#right').mouseover(
- function(){ $(this).hide() }
- );
- $('#right').mouseleave(
- function(){ $(this).show() }
- )
- });
-
- */
