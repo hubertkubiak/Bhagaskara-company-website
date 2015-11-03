@@ -430,9 +430,6 @@ a:hover {
   line-height: 1.5;
   padding-left: 30px;
 }
-.aboutus .learnmore {
-  padding-top: 20%;
-}
 
 @media (min-width: 800px), (min-width: 690px) and (max-width: 800px) {
   .screens {
@@ -475,6 +472,24 @@ a:hover {
     margin: 0 auto;
   }
 }
+.button {
+  height: 70px;
+  width: 220px;
+  padding-top: 18px;
+  margin-top: 20%;
+  font-size: 1.3em;
+  color: white;
+  text-align: center;
+  box-shadow: 3px 4px 2px purple;
+  background: #9f449b;
+  border-radius: 7px;
+}
+.button:hover {
+  background: #fff;
+  border: 1px solid purple;
+  color: #9f449b;
+}
+
 .corners {
   text-align: center;
   display: block;
@@ -533,12 +548,13 @@ a:hover {
   float: left;
 }
 #ourteam p.check {
-  font-size: 1em;
+  font-size: 1.3em;
   text-align: center;
   color: white;
   background: #9f449b;
-  border-radius: 5px;
+  border-radius: 7px;
   width: 20%;
+  height: 30px;
   margin: 0 auto;
 }
 
@@ -893,12 +909,8 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-.watch {
-  text-align: center;
-  padding-bottom: 5%;
-}
-.watch img {
-  height: 60px;
+.watchMore {
+  margin: 0 auto;
 }
 
 .form {
@@ -949,7 +961,14 @@ a:hover {
   color: white;
   background: #9f449b;
   border-radius: 7px;
-  width: 50%;
+  height: 70px;
+  width: 220px;
+  box-shadow: 3px 4px 2px purple;
+}
+#submit:hover {
+  background: #fff;
+  border: 1px solid purple;
+  color: #9f449b;
 }
 
 .contactdata {

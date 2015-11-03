@@ -440,9 +440,6 @@ a {
       line-height: 1.5;
       padding-left: 30px;
     }
-    .learnmore {
-      padding-top: 20%;
-    }
 }
 
 @media #{$desktop, $tabletBig}{
@@ -480,6 +477,24 @@ a {
   .learnmore {
     display: block;
     margin: 0 auto;
+  }
+}
+
+.button{
+  height: 70px;
+  width: 220px;
+  padding-top: 18px;
+  margin-top: 20%;
+  font-size: 1.3em;
+  color: white;
+  text-align: center;
+  box-shadow: 3px 4px 2px purple;
+  background: map_get($Colors, purple);
+  border-radius: 7px;
+  &:hover{
+    background: map_get($Colors, white);
+    border: 1px solid purple;
+    color: map_get($Colors, purple);
   }
 }
 
@@ -547,12 +562,13 @@ a {
     float: left;
     }
   p.check{
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;
     color: white;
     background: map_get($Colors, purple);
-    border-radius: 5px;
+    border-radius: 7px;
     width: 20%;
+    height: 30px;
     margin: 0 auto;
   }
   }
@@ -943,16 +959,9 @@ a {
   background-repeat: no-repeat;
 }
 
-
-
-.watch {
-  text-align: center;
-  img {
-    height: 60px;
-  }
-  padding-bottom: 5%;
+.watchMore{
+  margin: 0 auto;
 }
-
 
 .form {
   text-align: left;
@@ -1002,8 +1011,16 @@ a {
   color: white;
   background: map_get($Colors, purple);
   border-radius: 7px;
-  width: 50%;
+  height: 70px;
+  width: 220px;
+  box-shadow: 3px 4px 2px purple;
+  &:hover{
+    background: map_get($Colors, white);
+    border: 1px solid purple;
+    color: map_get($Colors, purple);
+  }
 }
+
 
 .contactdata {
   vertical-align: top;
