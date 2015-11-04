@@ -2,6 +2,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   margin:0;
   padding:0;
   border:0;
+  font-family: 'Lato', sans-serif;
 }
 
 * {
@@ -13,21 +14,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   src: url(../fonts/existence/existence-light-webfont.ttf);
 }
 
-body{
-  font-family: 'Lato', sans-serif;
-}
-
-
 .grid-container {
   width : 100%;
   max-width : 960px;
   margin: 0 auto;
 }
-
-.col-12 {
-  width: 100%;
-}
-
 
 header {
   background-image: url(../images/Bhagaskara_01.jpg);
@@ -37,109 +28,76 @@ header {
   background-attachment: fixed;
 }
 
-@media (min-width: 800px) {
+.companyname {
+  font-family: Existence, Lato, sans-serif;
+  font-weight: bold;
+  color: map_get($Colors,white);
+  text-align: center;
+  padding-top: 10%;
+  span {
+    color: map_get($Colors,purple);
+  }
+}
+
+h3.head {
+  font-weight: lighter;
+  color: map_get($Colors,white);
+  text-align: center;
+}
+
+.vestibulum {
+  color: map_get($Colors,white);
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+@media #{$desktop} {
   .companyname {
-    font-family: Existence;
     font-size: 4em;
-    font-weight: bold;
-    color: map_get($Colors,white);
     line-height: 0.3;
-    text-align: center;
-    padding-top: 10%;
     padding-bottom: 8%;
-    span {
-      color: map_get($Colors,purple);
-    }
   }
-
   h3.head {
     font-size: 2em;
-    font-weight: lighter;
-    color: map_get($Colors,white);
     line-height: 0.5;
-    text-align: center;
-
   }
-
   .vestibulum {
-    color: map_get($Colors,white);
-    font-weight: lighter;
     line-height: 1;
-    text-align: center;
     font-size: 1em;
-    margin-top: 1%;
-    margin-bottom: 5%;
   }
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+@media #{$tabletBig, $tabletSmall} {
   .companyname {
-    font-family: Existence;
     font-size: 4em;
-    font-weight: bold;
-    color: map_get($Colors, white);
     line-height: 1;
-    text-align: center;
-    padding-top: 10%;
     padding-bottom: 8%;
-    span {
-      color: map_get($Colors, purple);
-    }
   }
-
   h3.head {
     font-size: 2em;
-    font-weight: lighter;
-    color: map_get($Colors, white);
     line-height: 1;
-    text-align: center;
-
   }
-
   .vestibulum {
-    color: map_get($Colors, white);
-    font-weight: lighter;
     line-height: 1;
-    text-align: center;
     font-size: 1em;
-    margin-top: 1%;
-    margin-bottom: 5%;
   }
 }
 
-@media (min-width: 0px) and (max-width: 400px) {
+@media #{$smartphone} {
   .companyname {
-    font-family: Existence;
     font-size: 3em;
-    font-weight: bold;
-    color: map_get($Colors, white);
     line-height: 1;
-    text-align: center;
-    padding-top: 10%;
     padding-bottom: 10%;
-    span {
-      color: map_get($Colors, purple);
-    }
   }
-
   h3.head {
     font-size: 1.5em;
-    font-weight: lighter;
-    color: map_get($Colors, white);
     line-height: 1;
     padding-bottom: 5%;
-    text-align: center;
-
   }
-
   .vestibulum {
-    color: map_get($Colors, white);
-    font-weight: lighter;
     line-height: 1;
-    text-align: center;
     font-size: 1em;
-    margin-top: 1%;
-    margin-bottom: 5%;
   }
 }
 
@@ -151,51 +109,14 @@ header {
   }
 }
 
-[class*="col-"]{
+@each $columns in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
+.col-#{$columns} {
+  width: calc(8.33%*#{$columns} - 4px);
   display: inline-block;
   text-align: center;
   margin: -2px;
 }
-
-
-.col-1 {
-  width: calc(8.33% - 4px);
 }
-.col-2 {
-  width: calc(16.66% - 4px);
-}
-.col-3 {
-  width: calc(25% - 4px);
-}
-.col-4 {
-  width: calc(33.33% - 4px);
-}
-.col-5 {
-  width: calc(41.66% - 4px);
-}
-.col-6 {
-  width: calc(50% - 4px);
-}
-.col-7 {
-  width: calc(58.33% - 4px);
-}
-.col-8 {
-  width: calc(66.66% - 4px);
-}
-.col-9 {
-  width: calc(75% - 4px);
-}
-.col-10 {
-  width: calc(83.33% - 4px);
-}
-.col-11 {
-  width: calc(91.66% - 4px);
-  }
-
-.col-12 {
-  width: calc(100% - 4px);
-}
-
 
 @media #{$desktop} {
   .navigation {
@@ -208,7 +129,6 @@ header {
     display: none;
   }
 }
-
 
 .scroll {
   text-align: center;
@@ -231,8 +151,7 @@ header {
 }
 
 .companyname2 {
-  font-family: Existence, sans-serif;
-  font-size: 3em;
+  font-family: Existence, Lato, sans-serif;
   color: map_get($Colors, mainFontColor);
   margin-left: 10px;
   text-align: left;
@@ -243,14 +162,14 @@ header {
     color: map_get($Colors, purple);
   }
 }
+
 .menu {
   list-style: none;
   text-align: right;
   color: map_get($Colors, mainFontColor);
 }
 
-
-@media (min-width: 800px) {
+@media #{$desktop} {
   .companyname2 {
     font-size: 2em;
     line-height: 0.5;
@@ -281,7 +200,6 @@ header {
 }
 
 @media #{$smartphone, $tabletSmall} {
-
   .navbar{
     min-height: 40px;
   }
@@ -315,12 +233,11 @@ header {
     background: map_get($Colors, lightGreyBackground);;
   }
 }
+
 .unwind {
   height:0;
   font-size:0;
 }
-
-
 
 .sticky {
   position: fixed;
@@ -328,7 +245,6 @@ header {
   width:100%;
   padding: 20px;
 }
-
 
 .menu {
     list-style: none;
@@ -422,7 +338,6 @@ a {
   }
 }
 
-
 @media #{$smartphone} {
   .love1 {
     display: block;
@@ -430,7 +345,6 @@ a {
     margin: 0 auto;
   }
 }
-
 
 .aboutus {
   padding-bottom: 10%;
@@ -513,7 +427,6 @@ a {
   }
 }
 
-
 .cornerspad {
   padding-top: 7%;
   padding-bottom: 8%;
@@ -571,7 +484,7 @@ a {
     height: 30px;
     margin: 0 auto;
   }
-  }
+}
 
 .circle {
   width: 160px;
@@ -624,7 +537,6 @@ a {
       cursor: pointer;
     }
     .socials{
-
     }
   }
 }
@@ -653,7 +565,6 @@ a {
   }
 }
 
-
 .skills {
   padding: 0 0 30px 0;
 }
@@ -676,121 +587,85 @@ a {
   background-color: #cdcdcd;
 }
 
+.WebBarSet, .GraphicBarSet, .HTMLBarSet, .AccBarSet {
+  background-color: #9f449b;
+  height: 20px;
+}
+
 .Hubert {
   .WebBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 95%;
   }
   .GraphicBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 92%;
   }
   .HTMLBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 91%;
   }
   .AccBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 88%;
   }
 }
 
 .Maria {
   .WebBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 67%;
   }
   .GraphicBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 77%;
   }
   .HTMLBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 87%;
   }
   .AccBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 97%;
   }
 }
 
 .Andrzej {
   .WebBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 95%;
   }
   .GraphicBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 85%;
   }
   .HTMLBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 75%;
   }
   .AccBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 65%;
   }
 }
 
 .Piotr {
   .WebBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 45%;
   }
   .GraphicBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 55%;
   }
   .HTMLBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 75%;
   }
   .AccBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 85%;
   }
 }
 
 .Kasia {
   .WebBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 64%;
   }
   .GraphicBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 53%;
   }
   .HTMLBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 99%;
   }
   .AccBarSet {
-    height: 20px;
-    background-color: #9f449b;
     width: 61%;
   }
 }
-
 
 .info {
   padding-top: 2%;
@@ -843,7 +718,6 @@ a {
   border-radius: 10%;
   margin: 2px;
   margin-bottom: 5%;
-
   &:focus {
     border-color: map_get($Colors, lightblue);
   }
@@ -868,6 +742,7 @@ a {
   margin: 5px;
   height: 420px;
   position: relative;
+  background-repeat: no-repeat;
   span {
     position:relative;
     top: 86%;
@@ -929,34 +804,11 @@ a {
   color: map_get($Colors, midGreyGallerytext);
 }
 
-.example1 {
-  background-image: url(../images/t1.jpg);
-  background-repeat: no-repeat;
-}
 
-.example2 {
-  background-image: url(../images/t2.jpg);
-  background-repeat: no-repeat;
-}
-
-.example3 {
-  background-image: url(../images/t3.jpg);
-  background-repeat: no-repeat;
-}
-
-.example4 {
-  background-image: url(../images/t4.jpg);
-  background-repeat: no-repeat;
-}
-
-.example5 {
-  background-image: url(../images/t5.jpg);
-  background-repeat: no-repeat;
-}
-
-.example6 {
-  background-image: url(../images/t6.jpg);
-  background-repeat: no-repeat;
+@each $example in 1, 2, 3, 4, 5, 6 {
+  .example#{$example}{
+    background-image: url(../images/t#{$example}.jpg);
+  }
 }
 
 .watchMore{
@@ -1013,7 +865,7 @@ a {
   border-radius: 7px;
   height: 70px;
   width: 220px;
-  box-shadow: 3px 4px 2px purple;
+  box-shadow: 3px 4px 2px map_get($Colors, purple);
   &:hover{
     background: map_get($Colors, white);
     border: 1px solid purple;
@@ -1106,7 +958,7 @@ a {
 }
 
 .companyname3 {
-  font-family: Existence;
+  font-family: Existence, Lato, sans-serif;
   font-size: 2.8em;
   font-weight: bold;
   color: map_get($Colors,mainFontColor);
