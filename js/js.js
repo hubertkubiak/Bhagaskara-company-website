@@ -104,7 +104,7 @@ $(function(){
         function stickyMenu (){
             var menu = $(".navbar");
             var sections = $(".sec");
-            var links = $(".navbar .menu a").not(document.getElementById("notblog"));
+            var links = $(".navbar .menu a").not(document.getElementsByClassName("notblog"));
             var lastMenuPositionFromTop = 0;
 
             $(window).scroll(function(event){
