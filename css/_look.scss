@@ -15,8 +15,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .grid-container {
-  width : 100%;
-  max-width : 960px;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -31,22 +31,22 @@ header {
 .companyname {
   font-family: Existence, Lato, sans-serif;
   font-weight: bold;
-  color: map_get($Colors,white);
+  color: map_get($Colors, white);
   text-align: center;
   padding-top: 10%;
   span {
-    color: map_get($Colors,purple);
+    color: map_get($Colors, purple);
   }
 }
 
 h3.head {
   font-weight: lighter;
-  color: map_get($Colors,white);
+  color: map_get($Colors, white);
   text-align: center;
 }
 
 .vestibulum {
-  color: map_get($Colors,white);
+  color: map_get($Colors, white);
   text-align: center;
   margin-top: 1%;
   margin-bottom: 5%;
@@ -109,13 +109,24 @@ h3.head {
   }
 }
 
-@each $columns in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 {
-.col-#{$columns} {
-  width: calc(8.33%*#{$columns} - 4px);
-  display: inline-block;
-  text-align: center;
-  margin: -2px;
-}
+@each $columns in 1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12 {
+  .col-#{$columns} {
+    width: calc(8.33%*#{$columns} - 4px);
+    display: inline-block;
+    text-align: center;
+    margin: -2px;
+  }
 }
 
 @media #{$desktop} {
@@ -183,30 +194,30 @@ h3.head {
   }
 }
 
-@media #{$tabletBig}{
+@media #{$tabletBig} {
   .companyname2 {
     font-size: 1.5em;
     line-height: 1;
     padding-top: 0;
   }
-  li{
-      font-size: 0.8em;
-      margin-left: 100px;
-    }
+  li {
+    font-size: 0.8em;
+    margin-left: 100px;
+  }
   .menu li.hamburger {
     display: none;
   }
 }
 
 @media #{$smartphone, $tabletSmall} {
-  .navbar{
+  .navbar {
     min-height: 40px;
   }
   .companyname2 {
     font-size: 1.5em;
     line-height: 1;
   }
-  .menu{
+  .menu {
     position: relative;
   }
   .menu.ul {
@@ -223,62 +234,63 @@ h3.head {
   }
 }
 
-.menuhamburger{
+.menuhamburger {
   list-style: none;
   text-align: center;
   font-size: 2.3em;
   width: 100%;
   li:nth-child(odd) {
-    background: map_get($Colors, lightGreyBackground);;
+    background: map_get($Colors, lightGreyBackground);
+    ;
   }
 }
 
 .unwind {
-  height:0;
-  font-size:0;
+  height: 0;
+  font-size: 0;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  width:100%;
+  width: 100%;
   padding: 20px;
 }
 
 .menu {
-    list-style: none;
-    text-align: right;
-    color: map_get($Colors, mainFontColor);
-  li{
+  list-style: none;
+  text-align: right;
+  color: map_get($Colors, mainFontColor);
+  li {
     display: inline-block;
     margin-left: 20px;
   }
 }
 
 a {
-    color: map_get($Colors, mainFontColor);
-    text-decoration: none;
+  color: map_get($Colors, mainFontColor);
+  text-decoration: none;
   &:hover {
-    color: map_get($Colors,purple);
+    color: map_get($Colors, purple);
   }
 }
 
 .active {
-  color: map_get($Colors,purple);
+  color: map_get($Colors, purple);
 }
 
 .sectionlove {
   background-color: map_get($Colors, lightGreyBackground);
 }
 
-@media #{$desktop, $tabletBig}{
+@media #{$desktop, $tabletBig} {
   .withlove {
     padding-top: 10%;
     text-align: center;
   }
 }
 
-@media #{$smartphone, $tabletSmall}{
+@media #{$smartphone, $tabletSmall} {
   .withlove {
     text-align: center;
   }
@@ -309,30 +321,30 @@ a {
     height: 45%;
     position: absolute;
     text-align: center;
-    img{
+    img {
       position: absolute;
-      width:100%;
-      top:0;
+      width: 100%;
+      top: 0;
       left: 0;
       opacity: 0;
     }
-    &:hover{
+    &:hover {
       cursor: pointer;
       img {
-        opacity:1;
+        opacity: 1;
       }
     }
   }
 }
 
-@media #{$desktop, $tabletBig, $tabletSmall}{
+@media #{$desktop, $tabletBig, $tabletSmall} {
   .love1 {
     display: inline-block;
   }
 }
 
-@media #{$tabletSmall}{
-  .love1{
+@media #{$tabletSmall} {
+  .love1 {
     margin: 40px;
   }
 }
@@ -347,15 +359,15 @@ a {
 
 .aboutus {
   padding-bottom: 10%;
-    .col-5 {
-      color: map_get($Colors, mainFontColor);
-      display: inline-block;
-      line-height: 1.5;
-      padding-left: 30px;
-    }
+  .col-5 {
+    color: map_get($Colors, mainFontColor);
+    display: inline-block;
+    line-height: 1.5;
+    padding-left: 30px;
+  }
 }
 
-@media #{$desktop, $tabletBig}{
+@media #{$desktop, $tabletBig} {
   .screens {
     display: inline-block;
     float: left;
@@ -370,12 +382,12 @@ a {
   }
 }
 
-@media #{$smartphone, $tabletSmall}{
+@media #{$smartphone, $tabletSmall} {
   .screens {
     display: block;
     margin: 0 auto;
   }
-  .aboutus{
+  .aboutus {
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -393,7 +405,7 @@ a {
   }
 }
 
-.button{
+.button {
   height: 70px;
   width: 220px;
   padding-top: 18px;
@@ -404,21 +416,21 @@ a {
   box-shadow: 3px 4px 2px purple;
   background: map_get($Colors, purple);
   border-radius: 7px;
-  &:hover{
+  &:hover {
     background: map_get($Colors, white);
     border: 1px solid purple;
     color: map_get($Colors, purple);
   }
 }
 
-.corners{
+.corners {
   text-align: center;
   display: block;
   padding-top: 8%;
   padding-bottom: 8%;
 }
 
-@media #{$smartphone}{
+@media #{$smartphone} {
   .corners {
     img {
       width: 80%;
@@ -431,7 +443,7 @@ a {
   padding-bottom: 8%;
 }
 
-.interlude{
+.interlude {
   background-image: url(../images/quotebg.png);
   width: 100%;
   background-size: cover;
@@ -445,16 +457,16 @@ a {
   .quote {
     padding: 4%;
   }
-  p{
+  p {
     color: map_get($Colors, white);
     font-size: 2.5em;
     padding-bottom: 10%;
   }
 }
 
-@media #{$smartphone, $tabletSmall}{
-  .quotemain{
-    p{
+@media #{$smartphone, $tabletSmall} {
+  .quotemain {
+    p {
       font-size: 1.5em;
     }
   }
@@ -469,11 +481,11 @@ a {
   }
   #left {
     float: right;
-    }
+  }
   #right {
     float: left;
-    }
-  p.check{
+  }
+  p.check {
     font-size: 1.3em;
     text-align: center;
     color: white;
@@ -517,41 +529,40 @@ a {
   background: url(../images/szostak.png);
 }
 
-.ourservices{
+.ourservices {
   width: 100%;
 }
 
-#owl-demo{
+#owl-demo {
   text-align: center;
 }
 
 .teammember {
-  div{
-    h4{
-      padding:10px;
-      cursor: pointer;
-    }
-    span{
+  div {
+    h4 {
       padding: 10px;
       cursor: pointer;
     }
-    .socials{
+    span {
+      padding: 10px;
+      cursor: pointer;
     }
+    .socials {}
   }
 }
 
-.cornersskills{
+.cornersskills {
   padding-top: 0;
 }
 
 #info-section {
   background: map_get($Colors, lightGreyBackground);
-  .slider{
-    .sliderlist{
+  .slider {
+    .sliderlist {
       list-style: none;
       text-align: center;
       overflow: hidden;
-      div.slideelement{
+      div.slideelement {
         padding-bottom: 5%;
         text-align: center;
         img {
@@ -569,7 +580,7 @@ a {
 }
 
 .rightskills {
-  h4{
+  h4 {
     float: left;
   }
   span {
@@ -586,7 +597,10 @@ a {
   background-color: #cdcdcd;
 }
 
-.WebBarSet, .GraphicBarSet, .HTMLBarSet, .AccBarSet {
+.WebBarSet,
+.GraphicBarSet,
+.HTMLBarSet,
+.AccBarSet {
   background-color: #9f449b;
   height: 20px;
 }
@@ -672,12 +686,12 @@ a {
 }
 
 @media #{$smartphone, $tabletSmall} {
-  .info{
+  .info {
     margin: 0 auto;
     text-align: center;
-    .inf{
+    .inf {
       width: 40%;
-      span{
+      span {
         padding: 5px;
         font-size: 1.5em;
       }
@@ -685,14 +699,14 @@ a {
   }
 }
 
-.number{
+.number {
   font-size: 4em;
   color: map_get($Colors, darkGrey);
   clear: both;
 }
 
-.lorem{
-  clear:both;
+.lorem {
+  clear: both;
   color: map_get($Colors, darkGrey);
 }
 
@@ -701,8 +715,8 @@ a {
   text-align: center;
 }
 
-@media #{$tabletMedium}{
-  .portfolio{
+@media #{$tabletMedium} {
+  .portfolio {
     text-align: center;
     .select {
       width: 120px;
@@ -727,7 +741,7 @@ a {
   }
 }
 
-.selectactive{
+.selectactive {
   background: purple;
   color: map_get($Colors, white);
 }
@@ -737,6 +751,7 @@ a {
   position: relative;
   margin: 0 auto;
 }
+
 .portfolioexample {
   width: calc(33% - 10px);
   margin: 5px;
@@ -744,16 +759,15 @@ a {
   position: relative;
   background-repeat: no-repeat;
   text-align: center;
-
   span {
-    position:relative;
+    position: relative;
     top: 86%;
     height: 100px;
     z-index: -2;
   }
 }
 
-@media #{$smartphone}{
+@media #{$smartphone} {
   .portfolioexample {
     display: block;
     width: 100%;
@@ -761,41 +775,41 @@ a {
 }
 
 .tour-caption {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   top: 0;
   width: 100%;
   height: 84%;
   position: absolute;
-  img{
+  img {
     position: absolute;
-    top:30%;
+    top: 30%;
     left: 28%;
     opacity: 0;
   }
-  &:hover{
-    background-color: rgba(0,0,0,0.5);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     img {
-      opacity:1;
+      opacity: 1;
     }
   }
 }
 
-@media #{$smartphone, $tabletSmall, $tabletBig}{
+@media #{$smartphone, $tabletSmall, $tabletBig} {
   .tour-caption {
-    img{
+    img {
       display: none;
     }
   }
 }
 
-@media #{$desktop}{
+@media #{$desktop} {
   .undertext1 {
     font-size: 1.5em;
   }
 }
 
-@media #{$tabletBig, $tabletSmall, $smartphone}{
+@media #{$tabletBig, $tabletSmall, $smartphone} {
   .undertext1 {
     font-size: 1em;
   }
@@ -805,14 +819,18 @@ a {
   color: map_get($Colors, midGreyGallerytext);
 }
 
-
-@each $example in 1, 2, 3, 4, 5, 6 {
-  .example#{$example}{
+@each $example in 1,
+2,
+3,
+4,
+5,
+6 {
+  .example#{$example} {
     background-image: url(../images/t#{$example}.jpg);
   }
 }
 
-.watchMore{
+.watchMore {
   margin: 0 auto;
 }
 
@@ -826,19 +844,20 @@ a {
   height: 60px;
   font-size: 1.5em;
   margin-bottom: 20px;
-  &:hover{
+  &:hover {
     border: 1px solid map_get($Colors, purple);
   }
 }
 
 .email {
   width: 98%;
-  height: 60px;;
+  height: 60px;
+  ;
   color: map_get($Colors, black);
   border: 1px solid map_get($Colors, black);
   font-size: 1.5em;
   margin-bottom: 20px;
-  &:hover{
+  &:hover {
     border: 1px solid map_get($Colors, purple);
   }
 }
@@ -850,10 +869,10 @@ a {
   border: 1px solid map_get($Colors, black);
   margin-bottom: 20px;
   padding-bottom: 15px;
-  &:hover{
+  &:hover {
     border: 1px solid map_get($Colors, purple);
   }
-  &:focus{
+  &:focus {
     border: 1px solid map_get($Colors, lightblue);
   }
 }
@@ -867,13 +886,12 @@ a {
   height: 70px;
   width: 220px;
   box-shadow: 3px 4px 2px map_get($Colors, purple);
-  &:hover{
+  &:hover {
     background: map_get($Colors, white);
     border: 1px solid purple;
     color: map_get($Colors, purple);
   }
 }
-
 
 .contactdata {
   vertical-align: top;
@@ -885,7 +903,7 @@ a {
   .contacttext {
     color: map_get($Colors, mainFontColor)
   }
-  .adress{
+  .adress {
     font-weight: bold;
     color: map_get($Colors, darkGrey)
   }
@@ -895,8 +913,7 @@ a {
   }
 }
 
-
-.social{
+.social {
   display: inline-block;
   background-repeat: no-repeat;
   height: 50px;
@@ -905,52 +922,52 @@ a {
 
 .facebook {
   background-image: url(../images/f.png);
-  &:hover{
+  &:hover {
     background-image: url(../images/fhr.png);
   }
 }
-.twitter{
+
+.twitter {
   background-image: url(../images/t.png);
-  &:hover{
+  &:hover {
     background-image: url(../images/thr.png);
   }
 }
 
 .google {
   background-image: url(../images/g.png);
-  &:hover{
+  &:hover {
     background-image: url(../images/ghr.png);
   }
 }
 
-@media #{$smartphone, $tabletSmall}{
+@media #{$smartphone, $tabletSmall} {
   .contactcontent {
     text-align: center;
   }
-  form{
+  form {
     text-align: center;
     width: 100%;
   }
-  .email{
+  .email {
     font-size: 1em;
   }
-  .name{
+  .name {
     font-size: 1em;
   }
-  .textarea{
+  .textarea {
     font-size: 1em;
   }
-  #submit{
+  #submit {
     margin: 0 auto;
     width: 100%;
     font-size: 0.9em;
   }
-  .contactdata{
+  .contactdata {
     width: 80%;
     margin: 0 auto;
   }
 }
-
 
 .totopbottom {
   position: fixed;
@@ -962,12 +979,12 @@ a {
   font-family: Existence, Lato, sans-serif;
   font-size: 2.8em;
   font-weight: bold;
-  color: map_get($Colors,mainFontColor);
+  color: map_get($Colors, mainFontColor);
   line-height: 0.3;
   text-align: center;
   padding-top: 10%;
   padding-bottom: 8%;
   span {
-    color: map_get($Colors,purple);
+    color: map_get($Colors, purple);
   }
 }
